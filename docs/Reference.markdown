@@ -1,6 +1,12 @@
 ---
-layout: post
+layout: page
 title:  "リファレンス実装と使用例"
+subtitle: "利用可能なアプリケーションをご紹介します"
+description: "Virtual Motion Capture Protocol - ゲーム、ツール、配信環境など、あらゆる場所で使いやすいモーションキャプチャプロトコル仕様"
+image: vmpc_logo_128x128.png
+hero_height: is-fullwidth
+hero_darken: true
+
 ---
 
 # リファレンス実装

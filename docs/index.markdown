@@ -1,11 +1,17 @@
 ---
 layout: page
-title: "Virtual Motion Capture Protocol<br><font size=4>Easy to use motion capture protocol in your game, tool, live, and everywhere.</font>"
+title: "Virtual Motion Capture Protocol"
+subtitle: "ゲーム、ツール、配信環境など、あらゆる場所で使いやすいモーションキャプチャプロトコル"
+description: "Virtual Motion Capture Protocol - ゲーム、ツール、配信環境など、あらゆる場所で使いやすいモーションキャプチャプロトコル仕様"
+image: vmpc_logo_128x128.png
+hero_height: is-fullwidth
+hero_darken: true
+#Easy to use motion capture protocol in your game, tool, live, and everywhere.
 ---
 Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**の情報を送受信するためのプロトコルです。
 
 # 簡単に使い始められる
-Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知識を要すること無く、自前のVR撮影環境を作成できるように作成されました。  
+Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知識を要すること無くVR撮影環境を自作することを可能とするために作成されました。  
 高度な技術が要求されるアバターの制御、VR機器の取り扱いを**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**に任せ、  
 利用者は以下の受信ライブラリを使うだけでとてもシンプルにアバター撮影環境を構築することができます。
 - **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity向け
@@ -18,6 +24,12 @@ Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知�
 (VR機器の代わりにiPhoneのフェイシャルキャプチャを用いる**[waidayo](https://booth.pm/ja/items/1779185)**の例があります。)
 
 {% include youtubePlayer.html id="DunqgLrUfpI" %}
+
+# ロゴ
+VMC Protocol対応アプリケーションは以下のロゴを使用することができます。  
+
+![logo](vmpc_logo_128x128.png)  
+[より大きなサイズの画像が必要な場合はこちらからダウンロードできます。](vmpc_logo_1024x1024.png)
 
 # シンプルな実装で広い環境に対応
 オープンな規格であるOpen Sound ControlとVRMを前提とし、シンプルな数値・文字列情報の送受信のみで構成されています。  
