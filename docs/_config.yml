@@ -22,7 +22,7 @@ title: VirtualMotionCaptureProtocol
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
   VirtualMotionCaptureProtocol Specification
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/VirtualMotionCaptureProtocol" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
