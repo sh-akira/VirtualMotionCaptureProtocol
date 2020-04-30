@@ -51,7 +51,7 @@ VRM規格で作成されたVRモデルの
 すでに7作品以上で利用されています。また、リファレンス実装はすべてオープンソースであり、実際に動く作品の中身を確認することができます。
 
 # お問い合わせ
-本ページに関して問題がある場合、[Issue](../)よりお知らせください。  
+本ページに関して問題がある場合、[Issue](https://github.com/sh-akira/VirtualMotionCaptureProtocol/issues)よりお知らせください。  
 
 Virtual Motion Capture Protocolは、[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)の製作者であるgpsnmeajpが主にメンテナンスしています。  
 [お問い合わせはEVMC4UのDiscordへお願いします。](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity/wiki/Discord)
