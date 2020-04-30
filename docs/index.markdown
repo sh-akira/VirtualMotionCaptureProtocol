@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Virtual Motion Capture Protocol - Easy to use motion capture protocol in your game, tool, live, and everywhere."
+title: "Virtual Motion Capture Protocol<br><font size=4>Easy to use motion capture protocol in your game, tool, live, and everywhere.</font>"
 ---
 Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**の情報を送受信するためのプロトコルです。
 
