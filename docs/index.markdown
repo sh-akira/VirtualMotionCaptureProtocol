@@ -30,6 +30,7 @@ Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知�
 VRM規格で作成されたVRモデルの
 - ボーン情報
 - BlendShape情報
+
 の送受信の他
 
 - カメラ制御
