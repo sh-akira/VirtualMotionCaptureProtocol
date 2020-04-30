@@ -256,6 +256,7 @@ DEPENDENCIES
   bulma-clean-theme
   github-pages (~> 204)
   jekyll-feed (~> 0.12)
+  jekyll-remote-theme
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
