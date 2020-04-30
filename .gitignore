@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# tools
+0_build.bat
+0_serve.bat
+0_bundle.bat
