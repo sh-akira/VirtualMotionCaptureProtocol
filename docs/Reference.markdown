@@ -3,7 +3,7 @@ layout: post
 title:  "リファレンス実装と使用例"
 ---
 
-# リファンレンス実装
+# リファレンス実装
 - [バーチャルモーションキャプチャー(送信)](https://sh-akira.github.io/VirtualMotionCapture/) - VR機器でVRMの3Dモデルをコントロール(ExternalSenderフォルダ内のスクリプト)
 - [EVMC4U(受信ライブラリ)](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity) - Unity向けモーション受信アセット(すべてのReceiver系スクリプト)
 
