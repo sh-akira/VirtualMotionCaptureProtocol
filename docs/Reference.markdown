@@ -21,4 +21,4 @@ title:  "リファレンス実装と使用例"
 - [パイロットクロス(PilotXross)](https://n-mattun.booth.pm/items/1997616) - VR機器向けに開発したVRフライトゲームです
 - [VMCAvatar-BS](https://github.com/nagatsuki/VMCAvatar-BS) - Beat Saber内にアバターを表示するMod
 
-本項目は見つけ次第掲載しているものです。本ページへの掲載・削除に関しては[Issue](../)よりお知らせください。  
+本項目は見つけ次第掲載しているものです。本ページへの掲載・削除に関しては[Issue](https://github.com/sh-akira/VirtualMotionCaptureProtocol/issues)よりお知らせください。  
