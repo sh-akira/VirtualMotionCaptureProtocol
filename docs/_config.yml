@@ -29,6 +29,8 @@ github_username:
 
 # Build settings
 theme: bulma-clean-theme #minima
+remote_theme: chrisrhymes/bulma-clean-theme
+
 plugins:
   - jekyll-feed
 
