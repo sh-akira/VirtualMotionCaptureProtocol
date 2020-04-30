@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
 title: "Virtual Motion Capture Protocol - Easy to use motion capture protocol in your game, tool, live, and everywhere."
 ---
