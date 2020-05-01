@@ -1,4 +1,11 @@
 - name: Specification
   link: /specification
+  dropdown: 
+  - name: Specification
+    link: /specification
+  - name: Marionette Spec
+    link: /marionette-spec
+  - name: Performer Spec
+    link: /performer-spec
 - name: Reference&Apps
   link: /Reference
