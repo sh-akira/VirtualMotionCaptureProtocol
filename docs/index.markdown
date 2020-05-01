@@ -9,7 +9,8 @@ hero_height: is-fullwidth
 hero_darken: true
 #Easy to use motion capture protocol in your game, tool, live, and everywhere.
 ---
-Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**の情報を送受信するためのプロトコルです。
+Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**の情報を送受信するためのプロトコルです。  
+ハッシュタグは **[#VMCProtocol](https://twitter.com/search?q=%23VMCProtocol)**
 
 # 簡単に使い始められる
 Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知識を要すること無くVR撮影環境を自作することを可能とするために作成されました。  
