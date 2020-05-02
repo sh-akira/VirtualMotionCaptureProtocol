@@ -12,6 +12,12 @@ hero_darken: true
 Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**の情報を送受信するためのプロトコルです。  
 ハッシュタグは **[#VMCProtocol](https://twitter.com/search?q=%23VMCProtocol)**
 
+# ロゴ
+VMC Protocol対応アプリケーションは以下のロゴを使用することができます。  
+
+![logo](vmpc_logo_128x128.png)  
+[より大きなサイズの画像が必要な場合はこちらからダウンロードできます。](vmpc_logo_1024x1024.png)
+
 # 簡単に使い始められる
 Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知識を要すること無くVR撮影環境を自作することを可能とするために作成されました。  
 高度な技術が要求されるアバターの制御、VR機器の取り扱いを**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**に任せ、  
@@ -27,11 +33,6 @@ Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知�
 
 {% include youtubePlayer.html id="DunqgLrUfpI" %}
 
-# ロゴ
-VMC Protocol対応アプリケーションは以下のロゴを使用することができます。  
-
-![logo](vmpc_logo_128x128.png)  
-[より大きなサイズの画像が必要な場合はこちらからダウンロードできます。](vmpc_logo_1024x1024.png)
 
 # シンプルな実装で広い環境に対応
 オープンな規格であるOpen Sound ControlとVRMを前提とし、シンプルな数値・文字列情報の送受信のみで構成されています。  
@@ -60,6 +61,14 @@ VRM規格で作成されたVRモデルの
 などの高度な情報の送受信にも対応しています。
 
 もちろんこれらの情報の全てに対応する必要はなく、使いたい情報のみ対応して使用することができます。
+
+# 本プロトコルを受信する利点
+- 簡単に使える
+- バーチャルモーションキャプチャー他のソフトにアバターの動きを任せることができる
+- 新デバイスが出た際などにも、送信元ソフトが対応すれば他に対応する必要がない
+
+# 本プロトコルを送信する利点
+- 様々なアプリケーションの表示機能や拡張を利用できる
 
 # 実装が公開されており、実績あり
 すでに7作品以上で利用されています。また、リファレンス実装はすべてオープンソースであり、実際に動く作品の中身を確認することができます。
