@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "プロトコル仕様"
+title:  "VMC Protocol Marionetteプロトコル仕様"
 subtitle: "プロトコル仕様の詳細をご説明します"
 description: "VMCProtocol - ゲーム、ツール、配信環境など、あらゆる場所で使いやすいモーションキャプチャプロトコル仕様"
 image: vmpc_logo_128x128.png
