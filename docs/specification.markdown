@@ -64,6 +64,9 @@ UX観点より送信アドレス・受信ポートを変更可能にすること
 
 # OSCのデバッグ
 データのチェックには以下が便利です。  
+[VMCProtocolMonitor](https://github.com/gpsnmeajp/VMCProtocolMonitor)
+
+一般的なOSCモニタツールも使用することができます。  
 [OSCDataMonitor(Github)](https://github.com/kasperkamperman/OSCDataMonitor)  
 [OSCDataMonitor(Download)](https://www.kasperkamperman.com/blog/processing-code/osc-datamonitor/)  
 
