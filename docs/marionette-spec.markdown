@@ -10,6 +10,8 @@ hero_darken: true
 ---
 
 # Marionette(モーション受信側アプリケーション)受信仕様
+Performer → Marionetteの流れで送信されるデータの仕様です。
+
 ## 内容
 ```
 基本仕様

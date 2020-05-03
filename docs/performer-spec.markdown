@@ -9,6 +9,8 @@ hero_height: is-fullwidth
 hero_darken: true
 ---
 # Performer(モーション送信側アプリケーション)受信仕様
+Marionette → Performer あるいは、Assistant → Performer の流れで送信されるデータの仕様です。
+
 ### Virtual Device Transform
 ```
 V2.3
