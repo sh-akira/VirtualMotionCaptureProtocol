@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Virtual Motion Capture Protocol"
+title: "Virtual Motion Capture Protocol( VMCProtocol 公式ページ )"
 subtitle: "ゲーム、ツール、配信環境など、あらゆる場所で使いやすいモーションキャプチャプロトコル"
-description: "Virtual Motion Capture Protocol - ゲーム、ツール、配信環境など、あらゆる場所で使いやすいモーションキャプチャプロトコル仕様"
+description: "VMCProtocol - ゲーム、ツール、配信環境など、あらゆる場所で使いやすいモーションキャプチャプロトコル仕様"
 image: vmpc_logo_128x128.png
 hero_image: image.gif
 hero_height: is-fullwidth
