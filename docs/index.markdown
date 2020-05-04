@@ -9,7 +9,7 @@ hero_height: is-fullwidth
 hero_darken: true
 #Easy to use motion capture protocol in your game, tool, live, and everywhere.
 ---
-Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**の情報を送受信するためのプロトコルです。  
+Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**の情報を送受信するためのプロトコルです。( VMCプロトコル 、ばもきゃプロトコル と呼ばれることもあります。)  
 ハッシュタグは **[#VMCProtocol](https://twitter.com/search?q=%23VMCProtocol)**
 
 # ロゴ
