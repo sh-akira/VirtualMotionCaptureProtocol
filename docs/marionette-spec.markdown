@@ -225,3 +225,16 @@ V2.5
 ```
 現在読み込まれている設定ファイルのパス    
 低頻度で送信される。
+
+### スルー情報(Thru info)
+```
+V2.6
+/VMC/Thru/xxxxxxxxx/xxxxxxxxx (string){arg1} 
+/VMC/Thru/xxxxxxxxx/xxxxxxxxx (string){arg1} (float){arg2} 
+/VMC/Thru/xxxxxxxxx/xxxxxxxxx (string){arg1} (int){arg2} 
+```
+xxxxxxxxxは任意の名前。  
+Assistantの独自拡張情報の送信用。  
+原則、Performerはこれに該当するメッセージは一切の処理をせず、Marionetteへと中継する。  
+ただし、記載がある場合、Performerがなにかに利用したり、中継時に書き換えることもある。  
+**リファレンス未実装**
