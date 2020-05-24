@@ -11,11 +11,11 @@ hero_darken: true
 ---
 
 # リファレンス実装
-- [バーチャルモーションキャプチャー(送信)](https://sh-akira.github.io/VirtualMotionCapture/) - VR機器でVRMの3Dモデルをコントロール(ExternalSenderフォルダ内のスクリプト)
+- [バーチャルモーションキャプチャー - VirtualMotionCapture](https://sh-akira.github.io/VirtualMotionCapture/) - VR機器でVRMの3Dモデルをコントロール(ExternalSenderフォルダ内のスクリプト)
 - [EVMC4U(受信ライブラリ)](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity) - Unity向けモーション受信アセット(すべてのReceiver系スクリプト)
 
 # Performer(モーション送信)アプリケーション
-- [バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/) - VR機器でVRMの3Dモデルをコントロール
+- [バーチャルモーションキャプチャー - VirtualMotionCapture](https://sh-akira.github.io/VirtualMotionCapture/) - VR機器でVRMの3Dモデルをコントロール
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ。VMCと併用可能
 
 # Assistant(拡張情報送信)アプリケーション
