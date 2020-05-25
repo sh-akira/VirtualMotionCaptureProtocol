@@ -23,6 +23,13 @@ public class SampleBonesSend : MonoBehaviour
     Animator animator = null;
     VRMBlendShapeProxy blendShapeProxy = null;
 
+    public enum VirtualDevice
+    {
+        HMD = 0,
+        Controller = 1,
+        Tracker = 2,
+    }
+
     void Start()
     {
         uClient = GetComponent<uOSC.uOscClient>();
@@ -66,6 +73,14 @@ public class SampleBonesSend : MonoBehaviour
                 }
             }
 
+            //ボーン位置を仮想トラッカーとして送信
+            SendBoneTransformForTracker(HumanBodyBones.Head, "Head");
+            SendBoneTransformForTracker(HumanBodyBones.Spine, "Spine");
+            SendBoneTransformForTracker(HumanBodyBones.LeftHand, "LeftHand");
+            SendBoneTransformForTracker(HumanBodyBones.RightHand, "RightHand");
+            SendBoneTransformForTracker(HumanBodyBones.LeftFoot, "LeftFoot");
+            SendBoneTransformForTracker(HumanBodyBones.RightFoot, "RightFoot");
+
             //BlendShape
             if (blendShapeProxy != null)
             {
@@ -87,5 +102,21 @@ public class SampleBonesSend : MonoBehaviour
             uClient.Send("/VMC/Ext/OK", 0);
         }
         uClient.Send("/VMC/Ext/T", Time.time);
+    }
+
+    void SendBoneTransformForTracker(HumanBodyBones bone, string DeviceSerial)
+    {
+        var DeviceTransform = animator.GetBoneTransform(bone);
+        if (DeviceTransform != null) {
+            uClient.Send("/VMC/Ext/Tra/Pos",
+        (string)DeviceSerial,
+        (float)DeviceTransform.position.x,
+        (float)DeviceTransform.position.y,
+        (float)DeviceTransform.position.z,
+        (float)DeviceTransform.rotation.x,
+        (float)DeviceTransform.rotation.y,
+        (float)DeviceTransform.rotation.z,
+        (float)DeviceTransform.rotation.w);
+        }
     }
 }
