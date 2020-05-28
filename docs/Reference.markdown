@@ -17,6 +17,7 @@ hero_darken: true
 # Performer(モーション送信)アプリケーション
 - [バーチャルモーションキャプチャー - VirtualMotionCapture](https://sh-akira.github.io/VirtualMotionCapture/) - VR機器でVRMの3Dモデルをコントロール
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ。VMCと併用可能
+- [360KinectGum](https://daifuklana.booth.pm/items/2109279) - Xbox360版Kinectを用いたモーションキャプチャ。
 
 # Assistant(拡張情報送信)アプリケーション
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ。VMCと併用可能
