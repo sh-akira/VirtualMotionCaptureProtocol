@@ -31,6 +31,7 @@ hero_darken: true
 - [Virtual Streamer 360](https://booth.pm/ja/items/1702492) - VR360°配信用のソフトウェア
 - [だれでもVsinger](https://honokakaori.booth.pm/items/1768267) - 生歌配信、もしくはMVを一発撮りするために作られたものです
 - [Collaboll(コラボル)](https://brother-pv.booth.pm/items/2016717) - VRMモデルとネットワーク通信で、複数人数でバーチャルキャラクター、所謂Vtuber動画を収録する事が出来るアプリです。
+- [Oredayo](https://github.com/gpsnmeajp/Oredayo) - 主にWaidayoの撮影を支援するために作成された高性能VMCProtocolビューア
 
 ### 映像支援ツール
 - [VMC-Websocket-OBS](https://github.com/gpsnmeajp/VMC-Websocket-OBS) - VMCProtocolを用いてバーチャルモーションキャプチャーの状態を取得し、Websocketを用いてOBSを制御するソフトウェア
@@ -49,5 +50,8 @@ hero_darken: true
 - [UniVRM 0.53(Unity環境 必須)](https://github.com/vrm-c/UniVRM)
 - [uOSC(Unity環境 推奨)](https://github.com/hecomi/uOSC)
 - [Rug.OSC(C#環境 推奨)](https://bitbucket.org/rugcode/rug.osc/src/master/)
+
+# 解説記事
+- [Xbox360版KinectによるVMCProtocolを使用した姿勢情報の送信、VRMモデル操作について @daifuk-lana](https://qiita.com/daifuk-lana/items/c098fe9977c5e1202acb)
 
 本項目は見つけ次第掲載しているものです。本ページへの掲載・削除に関しては[Issue](https://github.com/sh-akira/VirtualMotionCaptureProtocol/issues)よりお知らせください。  
