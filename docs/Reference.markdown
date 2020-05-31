@@ -32,7 +32,7 @@ hero_darken: true
 - [Virtual Streamer 360](https://booth.pm/ja/items/1702492) - VR360°配信用のソフトウェア
 - [だれでもVsinger](https://honokakaori.booth.pm/items/1768267) - 生歌配信、もしくはMVを一発撮りするために作られたものです
 - [Collaboll(コラボル)](https://brother-pv.booth.pm/items/2016717) - VRMモデルとネットワーク通信で、複数人数でバーチャルキャラクター、所謂Vtuber動画を収録する事が出来るアプリです。
-- [Oredayo](https://github.com/gpsnmeajp/Oredayo) - 主にWaidayoの撮影を支援するために作成された高性能VMCProtocolビューア
+- [Oredayo4V](https://github.com/gpsnmeajp/Oredayo4V) - 主にWaidayoの撮影を支援するために作成された高性能VMCProtocolビューア
 
 ### 映像支援ツール
 - [VMC-Websocket-OBS](https://github.com/gpsnmeajp/VMC-Websocket-OBS) - VMCProtocolを用いてバーチャルモーションキャプチャーの状態を取得し、Websocketを用いてOBSを制御するソフトウェア
