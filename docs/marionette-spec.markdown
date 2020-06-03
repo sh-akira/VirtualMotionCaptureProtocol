@@ -28,6 +28,9 @@ Performer → Marionetteの流れで送信されるデータの仕様です。
   
 V2.5  
 /VMC/Ext/OK (int){loaded} (int){calibration state} (int){calibration mode}  
+  
+V2.7  
+/VMC/Ext/OK (int){loaded} (int){calibration state} (int){calibration mode} (int){tracking stataus}  
 ```
 loaded: モデル読み込み前は0、読み込み後は1  
 　後述のボーン情報等が送信されているか否かを示す  
@@ -43,6 +46,12 @@ calibration mode
 + 通常モードは0
 + MR通常モードは1
 + MR床補正モードは2  
+
+tracking stataus
++ 正常=1
++ 不可=0
+
+**V2.7 リファレンス未実装**
 
 ### 送信側相対時刻(Time)
 ```
@@ -164,10 +173,14 @@ serialはOpenVRのシリアル番号
 ```
 v2.4
 /VMC/Ext/Rcv (int){enable:0 or 1} (int){port:0～65535}  
+  
+v2.7
+/VMC/Ext/Rcv (int){enable:0 or 1} (int){port:0～65535} (string){IP Address}  
 ```
 VMC側の受信機能が有効なら1,無効なら0
 portは有効ならポート番号、無効なら不定値が入る
-低頻度で送信される。
+低頻度で送信される。  
+**V2.7 リファレンス未実装**
 
 ### 【低頻度】DirectionalLight位置・色(DirectionalLight transform & color)
 ```
@@ -181,12 +194,16 @@ VMCのDirectionalLightの位置・色
 ### 【低頻度】VRM基本情報(VRM information)
 ```
 V2.4
-/VMC/Ext/VRM (string){path} (string){title} 
+/VMC/Ext/VRM (string){path} (string){title}  
+  
+V2.7
+/VMC/Ext/VRM (string){path} (string){title} (string){Hash} 
 ```
 VMCが読み込んでいるVRMファイルの基本情報  
-現在はファイルパスとタイトルのみ  
+ファイルパスとタイトル、現在読み込まれているVRMデータのハッシュ値(SHA-256)    
 低頻度で送信される。  
 注意: 送信側でVRMライセンス情報その他のユーザーへの提示が終わったファイルのパスを送信することが前提になっています。  
+**V2.7 リファレンス未実装**
 
 ### 【低頻度】Option文字列(Option string)
 ```
@@ -237,4 +254,5 @@ xxxxxxxxxは任意の名前。
 Assistantの独自拡張情報の送信用。  
 原則、Performerはこれに該当するメッセージは一切の処理をせず、Marionetteへと中継する。  
 ただし、記載がある場合、Performerがなにかに利用したり、中継時に書き換えることもある。  
-**リファレンス未実装**
+**V2.6 リファレンス未実装**
+
