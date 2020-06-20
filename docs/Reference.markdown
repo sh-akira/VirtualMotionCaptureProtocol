@@ -53,7 +53,6 @@ hero_darken: true
 # 依存ライブラリ
 - [UniVRM 0.53(Unity環境 必須)](https://github.com/vrm-c/UniVRM)
 - [uOSC(Unity環境 推奨)](https://github.com/hecomi/uOSC)
-- [Rug.OSC(C#環境 推奨)](https://bitbucket.org/rugcode/rug.osc/src/master/)
 
 # 解説記事
 - [Xbox360版KinectによるVMCProtocolを使用した姿勢情報の送信、VRMモデル操作について @daifuk-lana](https://qiita.com/daifuk-lana/items/c098fe9977c5e1202acb)
