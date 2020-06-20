@@ -14,10 +14,13 @@ hero_darken: true
 - [バーチャルモーションキャプチャー - VirtualMotionCapture](https://sh-akira.github.io/VirtualMotionCapture/) - VR機器でVRMの3Dモデルをコントロール(ExternalSenderフォルダ内のスクリプト)
 - [EVMC4U(受信ライブラリ)](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity) - Unity向けモーション受信アセット(すべてのReceiver系スクリプト)
 
+# 採用事例
+
 # Performer(モーション送信)アプリケーション
-- [バーチャルモーションキャプチャー - VirtualMotionCapture](https://sh-akira.github.io/VirtualMotionCapture/) - VR機器でVRMの3Dモデルをコントロール
+- [バーチャルモーションキャプチャー - VirtualMotionCapture](https://sh-akira.github.io/VirtualMotionCapture/) - 汎用VR機器(OpenVR)を用いたモーションキャプチャー。3点から10点トラキングまで対応。視線トラッキングデバイスなどにも対応。
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ。VMCと併用可能
-- [360KinectGum](https://daifuklana.booth.pm/items/2109279) - Kinect v1を用いたモーションキャプチャ。
+- [360KinectGum](https://daifuklana.booth.pm/items/2109279) - Kinect v1を用いたフルボディモーションキャプチャ。
+- [ThreeDPoseTracker](https://qiita.com/yukihiko_a/items/43d09db5628334789fab) - USBカメラと機械学習を用いたフルボディモーションキャプチャー。
 
 # Assistant(拡張情報送信)アプリケーション
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ。VMCと併用可能
