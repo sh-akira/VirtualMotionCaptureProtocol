@@ -57,9 +57,12 @@ BlendShapeProxyの値
 ### Eye Tracking Target Position
 ```
 V2.3
+V2.8 (Disruptive change)
 /VMC/Ext/Set/Eye (int){enable} (float){p.x} (float){p.y} (float){p.z}
 ```
-アイトラッキング目標座標(Headからの相対座標)
+アイトラッキング目標座標(Headからの相対座標) (V2.8～)  
+※アイトラッキング目標座標(空間内絶対座標) (V2.3～V2.7)  
+  
 
 ### 【イベント送信】情報送信要求(Request Information)
 ```
