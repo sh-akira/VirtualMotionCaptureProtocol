@@ -59,7 +59,7 @@ BlendShapeProxyの値
 V2.3
 /VMC/Ext/Set/Eye (int){enable} (float){p.x} (float){p.y} (float){p.z}
 ```
-アイトラッキング目標座標(ルーム内絶対座標)
+アイトラッキング目標座標(Headからの相対座標)
 
 ### 【イベント送信】情報送信要求(Request Information)
 ```
