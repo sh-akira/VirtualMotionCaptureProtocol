@@ -113,15 +113,4 @@ xxxxxxxxxは任意の名前。
 Assistantの独自拡張情報の送信用。  
 原則、Performerはこれに該当するメッセージは一切の処理をせず、Marionetteへと中継する。  
 ただし、記載がある場合、Performerがなにかに利用したり、中継時に書き換えることもある。  
-**リファレンス未実装**
-
-### スルー情報(Thru info)
-```
-V2.6
-/VMC/Thru/Cmd (string){name} 
-/VMC/Thru/Cmd (string){name} (float){value} 
-/VMC/Thru/Cmd (string){name} (int){value} 
-```
-AssistantがMarionetteへ送る任意コマンド情報。  
-**リファレンス未実装**
 
