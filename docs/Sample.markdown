@@ -47,4 +47,9 @@ uOSC Clientとともに使用します。
 
 BlendShapeProxy名、値(0.0～1.0)を入力すると、BlendShapeProxy値として送信します。
 
+# CameraPositionSend.cs
+Assistant - 主にモーションの処理はせず、補助的な情報をPerformerに送信するサンプルです。  
+アタッチしたオブジェクトの位置をカメラ位置として送信します。
+
+uOSC Clientとともに使用します。
 
