@@ -114,3 +114,11 @@ Assistantの独自拡張情報の送信用。
 原則、Performerはこれに該当するメッセージは一切の処理をせず、Marionetteへと中継する。  
 ただし、記載がある場合、Performerがなにかに利用したり、中継時に書き換えることもある。  
 
+### DirectionalLight位置・色(DirectionalLight transform & color)
+```
+V2.9
+/VMC/Ext/Light (string){name} (float){p.x} (float){p.y} (float){p.z} (float){q.x} (float){q.y} (float){q.z} (float){q.w} (float){color.red} (float){color.green} (float){color.blue} (float){color.alpha} 
+```
+VMCのDirectionalLightの位置・色  
+前半がPosition、後半がQuaternionと色  
+V2.9 リファレンス未実装
