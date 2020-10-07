@@ -9,7 +9,7 @@ hero_height: is-fullwidth
 hero_darken: true
 #Easy to use motion capture protocol in your game, tool, live, and everywhere.
 ---
-Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**の情報を送受信するためのプロトコルです。( VMCプロトコル 、ばもきゃプロトコル と呼ばれることもあります。)  
+Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://vmc.info/)**の情報を送受信するためのプロトコルです。( VMCプロトコル 、ばもきゃプロトコル と呼ばれることもあります。)  
 ハッシュタグは **[#VMCProtocol](https://twitter.com/search?q=%23VMCProtocol)**
 
 # ロゴ
@@ -20,7 +20,7 @@ VMC Protocol対応アプリケーションは以下のロゴを使用するこ�
 
 # 簡単に使い始められる
 Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知識を要すること無くVR撮影環境を自作することを可能とするために作成されました。  
-高度な技術が要求されるアバターの制御、VR機器の取り扱いを**[バーチャルモーションキャプチャー](https://sh-akira.github.io/VirtualMotionCapture/)**に任せ、  
+高度な技術が要求されるアバターの制御、VR機器の取り扱いを**[バーチャルモーションキャプチャー](https://vmc.info/)**に任せ、  
 利用者は以下の受信ライブラリを使うだけでとてもシンプルにアバター撮影環境を構築することができます。
 - **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity向け
 - **[VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)** - Unreal Engine向け
