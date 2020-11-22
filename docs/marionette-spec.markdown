@@ -30,7 +30,7 @@ V2.5
 /VMC/Ext/OK (int){loaded} (int){calibration state} (int){calibration mode}  
   
 V2.7  
-/VMC/Ext/OK (int){loaded} (int){calibration state} (int){calibration mode} (int){tracking stataus}  
+/VMC/Ext/OK (int){loaded} (int){calibration state} (int){calibration mode} (int){tracking status}  
 ```
 loaded: モデル読み込み前は0、読み込み後は1  
 　後述のボーン情報等が送信されているか否かを示す  
@@ -47,7 +47,7 @@ calibration mode
 + MR通常モードは1
 + MR床補正モードは2  
 
-tracking stataus
+tracking status
 + 正常=1
 + 不可=0
 
