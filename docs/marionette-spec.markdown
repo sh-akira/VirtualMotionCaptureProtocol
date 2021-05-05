@@ -246,11 +246,10 @@ jsonは、json形式の文字列である。型や内容はserviceによって�
   
 注意: 送信側でVRMライセンス情報その他のユーザーへの提示が終わったアバターの情報を送信することが前提になっています。  
   
-**V3.0 リファレンス未実装**  
-
 ```
 サービス例
 /VMC/Ext/Remote vroidhub {"characterModelId":"123456789456"}
+/VMC/Ext/Remote dmmvrconnect {"user_id":"123456789456", "avatar_id":"123456789456"}
 ```
 
 
