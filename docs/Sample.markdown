@@ -22,10 +22,20 @@ Unity 2018.4.19f1で動作を確認しています。
 - [uOSC(Unity環境 推奨)](https://github.com/hecomi/uOSC)
 
 # SampleBonesSend.cs
-Performer - モーション送信側サンプルです。  
+Performer - モーション送信側サンプル(低速)です。  
 VRMモデルのroot位置、ボーン、BlendShapeProxyを送信します。
 
 uOSC Clientとともに使用します。
+細かくパケットを送信するため、低速になることがあります。
+
+ModelにVRMモデルのGameObjectを設定してください。
+
+# SampleBonesSendBundle.cs
+Performer - モーション送信側サンプル(高速)です。  
+VRMモデルのroot位置、ボーン、BlendShapeProxyを送信します。
+
+uOSC Clientとともに使用します。
+パケットをまとめて送る(bundle化する)ため、比較的高速です。
 
 ModelにVRMモデルのGameObjectを設定してください。
 
