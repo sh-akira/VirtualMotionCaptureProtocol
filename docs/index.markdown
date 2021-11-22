@@ -21,9 +21,10 @@ VMC Protocol対応アプリケーションは以下のロゴを使用するこ�
 # 簡単に使い始められる
 Virtual Motion Capture Protocolは、VTuberの人々がVR機器の高度な知識を要すること無くVR撮影環境を自作することを可能とするために作成されました。  
 高度な技術が要求されるアバターの制御、VR機器の取り扱いを**[バーチャルモーションキャプチャー](https://vmc.info/)**に任せ、  
-利用者は以下の受信ライブラリを使うだけでとてもシンプルにアバター撮影環境を構築することができます。
-- **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity向け
-- **[VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)** - Unreal Engine向け
+利用者は以下の受信アセット/アドオンを使うだけでとてもシンプルにアバター撮影環境を構築することができます。
+- **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity向けアセット
+- **[VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)** - Unreal Engine向けアセット
+- **[VMC4B Blender addon for VMCProtocol](https://tonimono.booth.pm/items/3432915)** - Blender向けモーション受信アドオン
 
 また、アバター撮影環境だけではなく、ゲームや、研究などにおいても、既存のアプリケーションに容易に組み込むことが可能です。
 
