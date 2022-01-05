@@ -33,7 +33,7 @@ hero_darken: true
 - [VMCOculus](https://github.com/denpadokei/VMCOculus) - Oculus版Beat SaberでVMCの頭が動かなくなる問題を解決するMOD(トラッカー姿勢情報)
 - [Sknuckle](https://sknuckle.pachelam.com/) - NOITOM Hi5 VR GLOVEでのハンドトラッキングを行う(手ボーン)
 - [VMCProtocolRotationCamera](https://github.com/gpsnmeajp/VMCProtocolRotationCamera) - VMCProtocolでバーチャルモーションキャプチャーのカメラを回すだけのツール(カメラ制御)
--[Uni-studio](https://unimotioninfo.wixsite.com/guide) - 全身フルトラッキングモーションシステム「Uni-motion」(トラッカー姿勢情報)
+- [Uni-studio](https://unimotioninfo.wixsite.com/guide) - 全身フルトラッキングモーションシステム「Uni-motion」(トラッカー姿勢情報)
 
 # Marionette(モーション受信)アプリケーション
 ### ライブラリ/アドオン
