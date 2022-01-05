@@ -75,5 +75,7 @@ hero_darken: true
 
 # 解説記事
 - [Xbox360版KinectによるVMCProtocolを使用した姿勢情報の送信、VRMモデル操作について @daifuk-lana](https://qiita.com/daifuk-lana/items/c098fe9977c5e1202acb)
+- [その他Qiitaの記事](https://qiita.com/tags/vmcprotocol)
+- [その他Noteの記事](https://note.com/search?q=VMCProtocol)
 
 本項目は見つけ次第掲載しているものです。本ページへの掲載・削除に関しては[Issue](https://github.com/sh-akira/VirtualMotionCaptureProtocol/issues)よりお知らせください。  
