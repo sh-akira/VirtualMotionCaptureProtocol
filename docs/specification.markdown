@@ -33,15 +33,19 @@ hero_darken: true
 
 そのためVMC Protocolでは、以下の独自の用語を定義します。
 
-+ **Marionette** - モーションを受信し、描画などを行います。  
-制御信号をPerformerに送信することがあります。(送信機能は無くても構いません)  
++ **Marionette** - モーションを受信し、描画などを行います。(必須)  
+最終的に画面や映像・通信に成果を出すための存在です。  
 (例: EVMC4U, VMC4UE, その他モーション受信対応アプリケーション)
-+ **Performer** - 主にモーションを処理し、Marionetteに送信します。  
-制御信号はMarionette、Assistantから受け取ることがあります。(受信機能は無くても構いません)  
-(例: バーチャルモーションキャプチャー, Waidayo)
-+ **Assistant** - 主にモーションの処理はせず、補助的な情報をPerformerに送信します。  
-基本的に制御信号を受け取ることはありません。制限付きPerformerとも言えます。  
-(例: face2vmcモードのWaidayo)
++ **Performer** - 主にモーションを処理し、全身ボーン情報と補助情報をMarionetteに送信します。(必須)  
+(例: バーチャルモーションキャプチャー, Waidayo, VSeeFace, MocapForAll, TDPTなど)
++ **Assistant** - 主にモーションの処理はせず、補助的な情報をPerformerに送信します。(オプション)  
+補助情報のみを送信する担当です。(一部ボーン、トラッカー姿勢、表情など)   
+(例: face2vmcモードのWaidayo, Sknuckle, Simple Motion Tracker, Uni-studioなど)
+
+**注意: Assistant(39540)→Marionette(39539) の直結は、大抵望み通りの結果を得られません。(送信される情報が不足していることが多いです)**  
+**必ずAssistant(39540)→(39540)Performer(39539)→Marionette(39539)と経由してください。**  
+
+AssistantとPerformerの両方の機能を持つソフトウェア(切替可能なもの)もあります。
 
 ![flow](flow.gif)
 
