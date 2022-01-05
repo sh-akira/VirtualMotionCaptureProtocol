@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "VMC Protocol specification (simplified)"
+title:  "VMC Protocol specification"
 subtitle: "english version specification"
 description: "VMCProtocol - Easy-to-use motion capture protocol specifications for games, tools, distribution environments, etc. "
 image: vmpc_logo_128x128.png
