@@ -12,6 +12,8 @@ hero_darken: true
 Virtual Motion Capture Protocolは**[バーチャルモーションキャプチャー](https://vmc.info/)**の情報を送受信するためのプロトコルです。( VMCプロトコル 、ばもきゃプロトコル と呼ばれることもあります。)  
 ハッシュタグは **[#VMCProtocol](https://twitter.com/search?q=%23VMCProtocol)**
 
+**[English](/english)**
+
 # ロゴ
 VMC Protocol対応アプリケーションは以下のロゴを使用することができます。  
 
