@@ -75,7 +75,7 @@ And It works server for Assistant(optional), commonly port 39540.
 It works client to Performer, commonly send to 39540.  
 (Eg: Waidayo, Sknuckle, Simple Motion Tracker, Uni-studio)
 
-![flow](flow.gif)
+![flow](flow_en.gif)
 
 # Communication format 
 + Open Sound Control(OSC) over UDP/IP
