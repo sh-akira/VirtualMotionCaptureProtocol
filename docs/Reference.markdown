@@ -25,6 +25,7 @@ hero_darken: true
 - [VSeeFace](https://www.vseeface.icu/) - VSeeFace is a free, highly configurable face and hand tracking VRM avatar puppeteering program.
 - [MocapForAll](https://vrlab.akiya-souken.co.jp/product) - PCと複数のウェブカメラによるフルボディモーションキャプチャ
 - [Keyboard Stuvio](https://natsunatsu.booth.pm/items/2956377) - WebカメラとMIDIキーボードによる演奏からモーションキャプチャ
+- [Webcam Motion Capture](https://webcammotioncapture.info/ja/index.php) - Webカメラや動画による顔・表情・指および腕のモーションキャプチャ。Windows/Mac対応
 
 # Assistant(拡張情報送信, 表情・視線・一部ボーンなどのみ)アプリケーション
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)
@@ -34,6 +35,7 @@ hero_darken: true
 - [Sknuckle](https://sknuckle.pachelam.com/) - NOITOM Hi5 VR GLOVEでのハンドトラッキングを行う(手ボーン)
 - [VMCProtocolRotationCamera](https://github.com/gpsnmeajp/VMCProtocolRotationCamera) - VMCProtocolでバーチャルモーションキャプチャーのカメラを回すだけのツール(カメラ制御)
 - [Uni-studio](https://unimotioninfo.wixsite.com/guide) - 全身フルトラッキングモーションシステム「Uni-motion」(トラッカー姿勢情報)
+- [kaodayo](https://booth.pm/ja/items/3281659) - iFacialMocap通信仕様をVMCProtocolに変換し、表情情報を送信する
 
 # Marionette(モーション受信)アプリケーション
 ### ライブラリ/アドオン
@@ -75,6 +77,7 @@ hero_darken: true
 
 # 解説記事
 - [Xbox360版KinectによるVMCProtocolを使用した姿勢情報の送信、VRMモデル操作について @daifuk-lana](https://qiita.com/daifuk-lana/items/c098fe9977c5e1202acb)
+- [PythonからVMC Protocolでばもきゃに情報を送信してみよう](https://takeda-san.hatenablog.com/entry/2021/12/12/005347)
 - [その他Qiitaの記事](https://qiita.com/tags/vmcprotocol)
 - [その他Noteの記事](https://note.com/search?q=VMCProtocol)
 
