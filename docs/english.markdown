@@ -10,7 +10,7 @@ hero_darken: true
 ---
 
 # What's
-Virtual Motion Capture Protocol (VMCProcotol) is avatar motion communication protocol for [virtual motion capture](https://vmc.info/).
+Virtual Motion Capture Protocol (VMCProcotol, OSC/VMC Protocol) is avatar motion communication protocol for [virtual motion capture](https://vmc.info/).
 
 You can easily move your avatar by using an easy-to-use library without implementing the handling of VR devices. 
 
