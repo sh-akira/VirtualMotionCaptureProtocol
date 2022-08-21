@@ -6,6 +6,15 @@
  * These codes are licensed under CC0.
  * http://creativecommons.org/publicdomain/zero/1.0/deed.ja
  */
+ 
+// このスクリプトの利用は推奨しません！！
+// このスクリプトは、学習用であり、必要な処理を欠いているため、通信バッファの詰まりを引き起こして、動作に異常な遅れを生じる場合があります。
+// SampleBonesSendBundle.csの方を利用することを強く推奨します。
+
+// NOT RECOMMENDED USE THIS SCRIPT!!
+// This script is for learning purposes only and lacks necessary processing, which can cause communication buffers to clog up and cause unusual delays in operation.
+// It is strongly recommended to use SampleBonesSendBundle.cs.
+ 
 using System;
 using System.Collections;
 using System.Collections.Generic;
