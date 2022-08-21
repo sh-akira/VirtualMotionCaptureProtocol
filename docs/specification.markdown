@@ -36,7 +36,7 @@ hero_darken: true
 + **Marionette** - モーションを受信し、描画などを行います。(必須)  
 最終的に画面や映像・通信に成果を出すための存在です。  
 (例: EVMC4U, VMC4UE, その他モーション受信対応アプリケーション)
-+ **Performer** - 主にモーションを処理し、全身ボーン情報と補助情報をMarionetteに送信します。(必須)  
++ **Performer** - 主にモーションを処理し、全身ボーン情報(IK)と補助情報をMarionetteに送信します。(必須)  
 (例: バーチャルモーションキャプチャー, Waidayo, VSeeFace, MocapForAll, TDPTなど)
 + **Assistant** - 主にモーションの処理はせず、補助的な情報をPerformerに送信します。(オプション)  
 補助情報のみを送信する担当です。(一部ボーン、トラッカー姿勢、表情など)   
@@ -48,6 +48,7 @@ hero_darken: true
 AssistantとPerformerの両方の機能を持つソフトウェア(切替可能なもの)もあります。
 
 ![flow](flow.gif)
+![layer](layer.png)
 
 # 通信形式について
 VMC Protocolでは、基本的にOpen Sound Control(OSC)の単方向UDP通信による実装で通信を行います。
