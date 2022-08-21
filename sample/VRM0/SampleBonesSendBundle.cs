@@ -1,5 +1,5 @@
 ﻿/*
- * SampleBonesSend
+ * SampleBonesSendBundle (VRM0.99)
  * gpsnmeajp
  * https://sh-akira.github.io/VirtualMotionCaptureProtocol/
  *
@@ -11,9 +11,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using VRM;
+using uOSC;
 
 [RequireComponent(typeof(uOSC.uOscClient))]
-public class SampleBonesSend : MonoBehaviour
+public class SampleBonesSendBundle : MonoBehaviour
 {
     uOSC.uOscClient uClient = null;
 
@@ -22,6 +23,8 @@ public class SampleBonesSend : MonoBehaviour
 
     Animator animator = null;
     VRMBlendShapeProxy blendShapeProxy = null;
+
+    public string filepath;
 
     public enum VirtualDevice
     {
@@ -58,6 +61,7 @@ public class SampleBonesSend : MonoBehaviour
             }
 
             //Bones
+            var boneBundle = new Bundle(Timestamp.Now);
             foreach (HumanBodyBones bone in Enum.GetValues(typeof(HumanBodyBones)))
             {
                 if (bone != HumanBodyBones.LastBone)
@@ -65,33 +69,39 @@ public class SampleBonesSend : MonoBehaviour
                     var Transform = animator.GetBoneTransform(bone);
                     if (Transform != null)
                     {
-                        uClient.Send("/VMC/Ext/Bone/Pos",
+                        boneBundle.Add(new Message("/VMC/Ext/Bone/Pos",
                             bone.ToString(),
                             Transform.localPosition.x, Transform.localPosition.y, Transform.localPosition.z,
-                            Transform.localRotation.x, Transform.localRotation.y, Transform.localRotation.z, Transform.localRotation.w);
+                            Transform.localRotation.x, Transform.localRotation.y, Transform.localRotation.z, Transform.localRotation.w));
                     }
                 }
             }
+            uClient.Send(boneBundle);
 
             //ボーン位置を仮想トラッカーとして送信
-            SendBoneTransformForTracker(HumanBodyBones.Head, "Head");
-            SendBoneTransformForTracker(HumanBodyBones.Spine, "Spine");
-            SendBoneTransformForTracker(HumanBodyBones.LeftHand, "LeftHand");
-            SendBoneTransformForTracker(HumanBodyBones.RightHand, "RightHand");
-            SendBoneTransformForTracker(HumanBodyBones.LeftFoot, "LeftFoot");
-            SendBoneTransformForTracker(HumanBodyBones.RightFoot, "RightFoot");
+            var trackerBundle = new Bundle(Timestamp.Now);
+            SendBoneTransformForTracker(ref trackerBundle, HumanBodyBones.Head, "Head");
+            SendBoneTransformForTracker(ref trackerBundle, HumanBodyBones.Spine, "Spine");
+            SendBoneTransformForTracker(ref trackerBundle, HumanBodyBones.LeftHand, "LeftHand");
+            SendBoneTransformForTracker(ref trackerBundle, HumanBodyBones.RightHand, "RightHand");
+            SendBoneTransformForTracker(ref trackerBundle, HumanBodyBones.LeftFoot, "LeftFoot");
+            SendBoneTransformForTracker(ref trackerBundle, HumanBodyBones.RightFoot, "RightFoot");
+            uClient.Send(trackerBundle);
 
             //BlendShape
             if (blendShapeProxy != null)
             {
+                var blendShapeBundle = new Bundle(Timestamp.Now);
+
                 foreach (var b in blendShapeProxy.GetValues())
                 {
-                    uClient.Send("/VMC/Ext/Blend/Val",
+                    blendShapeBundle.Add(new Message("/VMC/Ext/Blend/Val",
                         b.Key.ToString(),
                         (float)b.Value
-                        );
+                        ));
                 }
-                uClient.Send("/VMC/Ext/Blend/Apply");
+                blendShapeBundle.Add(new Message("/VMC/Ext/Blend/Apply"));
+                uClient.Send(blendShapeBundle);
             }
 
             //Available
@@ -102,13 +112,17 @@ public class SampleBonesSend : MonoBehaviour
             uClient.Send("/VMC/Ext/OK", 0);
         }
         uClient.Send("/VMC/Ext/T", Time.time);
+
+        //Load request
+        uClient.Send("/VMC/Ext/VRM", filepath, "");
+
     }
 
-    void SendBoneTransformForTracker(HumanBodyBones bone, string DeviceSerial)
+    void SendBoneTransformForTracker(ref Bundle bundle, HumanBodyBones bone, string DeviceSerial)
     {
         var DeviceTransform = animator.GetBoneTransform(bone);
         if (DeviceTransform != null) {
-            uClient.Send("/VMC/Ext/Tra/Pos",
+            bundle.Add(new Message("/VMC/Ext/Tra/Pos",
         (string)DeviceSerial,
         (float)DeviceTransform.position.x,
         (float)DeviceTransform.position.y,
@@ -116,7 +130,7 @@ public class SampleBonesSend : MonoBehaviour
         (float)DeviceTransform.rotation.x,
         (float)DeviceTransform.rotation.y,
         (float)DeviceTransform.rotation.z,
-        (float)DeviceTransform.rotation.w);
+        (float)DeviceTransform.rotation.w));
         }
     }
 }

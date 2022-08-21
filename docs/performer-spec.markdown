@@ -54,6 +54,36 @@ V2.3
 ```
 BlendShapeProxyの値
 
+**VRM0系とVRM1系の非互換性に関する警告**
+
+既存のVMCProtcol準拠のアプリケーションは、VRM0を使用しています。  
+VRM0と、VRM1では、プリセットのExpression(VRM0.xではBlendShape)が違うものになります。  
+
+VRM1系のVRM SDKを使用する場合、自動Migration時に、VRM0モデルもVRM1形式に変換されます。
+
+変更点は[VRM公式サイトを参照してください。](https://vrm.dev/vrm1/changed.html)
+
+
+既存のVRM0形式を用いるVMCProtocolアプリケーションとの互換性を保つため、
+
++ VRM1系を用いる送信者は、VRM0形式での送信を必ず実装してください。  
+  ただしVRM1形式での送信もオプションとして用意することを推奨します。
++ VRM1系を用いる受信者は、VRM0形式で受信した場合、VRM1形式に変換して処理してください。  
+
+|VRM0|VRM1|
+|---|---|
+|Joy|happy|
+|Angry|angry|
+|Sorrow|sad|
+|Fun|relaxed|
+|A|aa|
+|I|ih|
+|U|ou|
+|E|ee|
+|O|oh|
+|Blink_L|blinkLeft|
+|Blink_R|blinkRight|
+
 ### Eye Tracking Target Position
 ```
 V2.3

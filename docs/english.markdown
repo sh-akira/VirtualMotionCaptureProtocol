@@ -16,6 +16,8 @@ You can easily move your avatar by using an easy-to-use library without implemen
 
 [You can send and receive motions to and from various applications. ](Reference).
 
+[Sample implement](Sample)
+
 It is a simple implementation using Open Sound Control and VRM, and can communicate with various environments such as Windows, Mac, Linux, and iOS on machine internal or local network. 
 
 {% include youtubePlayer.html id="DunqgLrUfpI" %}
@@ -189,6 +191,35 @@ BlendShapeProxy value in VRM model.
 After all have been sent, **apply** will be sent.
 
 Facial expressions and lip sync are sent this.
+
+**VRM0 vs VRM1 Incompatibility Warning**
+
+Existing VMCProtcol compliant applications use VRM0.  
+VRM0 and VRM1 have different preset Expressions (VRM0.x : BlendShape).
+
+When using a VRM1-based VRM SDK, VRM0 models are also converted to VRM1 format during automatic migration.
+
+Please refer to the [VRM official website for changes. ](https://vrm.dev/vrm1/changed.html)
+
+To maintain compatibility with existing VMCProtocol applications that use the VRM0 format,
+
++ Senders using VRM1 system must implement transmission in VRM0 format.
+   However, it is recommended to prepare transmission in VRM1 format as an option.
++ Recipients using VRM1 system should convert to VRM1 format and process when receiving in VRM0 format.
+
+|VRM0 Preset BlendShape|VRM1 Preset Expressions|
+|---|---|
+|Joy|happy|
+|Angry|angry|
+|Sorrow|sad|
+|Fun|relaxed|
+|A|aa|
+|I|ih|
+|U|ou|
+|E|ee|
+|O|oh|
+|Blink_L|blinkLeft|
+|Blink_R|blinkRight|
 
 ### Camrea Transform&FOV
 ```
@@ -417,6 +448,35 @@ V2.3
 /VMC/Ext/Blend/Val (string){name} (float){value}  
 /VMC/Ext/Blend/Apply
 ```
+
+**VRM0 vs VRM1 Incompatibility Warning**
+
+Existing VMCProtcol compliant applications use VRM0.  
+VRM0 and VRM1 have different preset Expressions (VRM0.x : BlendShape).
+
+When using a VRM1-based VRM SDK, VRM0 models are also converted to VRM1 format during automatic migration.
+
+Please refer to [the VRM official website for changes. ](https://vrm.dev/vrm1/changed.html)
+
+To maintain compatibility with existing VMCProtocol applications that use the VRM0 format,
+
++ Senders using VRM1 system must implement transmission in VRM0 format.
+   However, it is recommended to prepare transmission in VRM1 format as an option.
++ Recipients using VRM1 system should convert to VRM1 format and process when receiving in VRM0 format.
+
+|VRM0 Preset BlendShape|VRM1 Preset Expressions|
+|---|---|
+|Joy|happy|
+|Angry|angry|
+|Sorrow|sad|
+|Fun|relaxed|
+|A|aa|
+|I|ih|
+|U|ou|
+|E|ee|
+|O|oh|
+|Blink_L|blinkLeft|
+|Blink_R|blinkRight|
 
 ### Eye Tracking Target Position
 ```

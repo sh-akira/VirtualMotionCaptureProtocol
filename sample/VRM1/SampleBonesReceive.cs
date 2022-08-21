@@ -1,16 +1,23 @@
 ﻿/*
- * SampleBonesReceive
+ * SampleBonesReceive (VRM1)
  * gpsnmeajp
  * https://sh-akira.github.io/VirtualMotionCaptureProtocol/
  *
  * These codes are licensed under CC0.
  * http://creativecommons.org/publicdomain/zero/1.0/deed.ja
  */
+
+// This is minimum sample of VMCProtocl.
+// Recommend to use EVMC4U.
+
+//これはVMCProtcolの最低限のサンプルです。
+//特段の理由がない場合、EVMC4Uを利用することをおすすめします。
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using VRM;
+using UniVRM10;
 
 [RequireComponent(typeof(uOSC.uOscServer))]
 public class SampleBonesReceive : MonoBehaviour
@@ -19,9 +26,11 @@ public class SampleBonesReceive : MonoBehaviour
     private GameObject OldModel = null;
 
     Animator animator = null;
-    VRMBlendShapeProxy blendShapeProxy = null;
+    Vrm10Instance vrmRoot = null;
 
     uOSC.uOscServer server;
+
+    Dictionary<ExpressionKey, float> expressions = new Dictionary<ExpressionKey, float>();
 
     void Start()
     {
@@ -31,9 +40,9 @@ public class SampleBonesReceive : MonoBehaviour
 
     void Update()
     {
-        if (blendShapeProxy == null)
+        if (vrmRoot == null)
         {
-            blendShapeProxy = Model.GetComponent<VRMBlendShapeProxy>();
+            vrmRoot = Model.GetComponent<Vrm10Instance>();
         }
     }
 
@@ -50,11 +59,11 @@ public class SampleBonesReceive : MonoBehaviour
 
         else if (message.address == "/VMC/Ext/Bone/Pos")
         {
-            //モデルが更新されたときのみ読み込み
+            //Model updated
             if (Model != null && OldModel != Model)
             {
                 animator = Model.GetComponent<Animator>();
-                blendShapeProxy = Model.GetComponent<VRMBlendShapeProxy>();
+                vrmRoot = Model.GetComponent<Vrm10Instance>();
                 OldModel = Model;
             }
 
@@ -80,11 +89,56 @@ public class SampleBonesReceive : MonoBehaviour
             string BlendName = (string)message.values[0];
             float BlendValue = (float)message.values[1];
 
-            blendShapeProxy.AccumulateValue(BlendName, BlendValue);
+            string expressionName = BlendName.ToLower();
+
+            //VRM0 Preset -> VRM1 Preset 
+            switch (expressionName) {
+                case "joy": expressionName = "happy"; break;
+                case "angry": expressionName = "angry"; break;
+                case "sorrow": expressionName = "sad"; break;
+                case "fun": expressionName = "relaxed"; break;
+                case "a": expressionName = "aa"; break;
+                case "i": expressionName = "ih"; break;
+                case "u": expressionName = "ou"; break;
+                case "e": expressionName = "ee"; break;
+                case "o": expressionName = "oh"; break;
+                case "blink_l": expressionName = "blinkleft"; break;
+                case "blink_r": expressionName = "blinkright"; break;
+                default: break;
+            }
+
+            //Search Expression
+            bool found = false;
+            foreach (var e in vrmRoot.Runtime.Expression.ExpressionKeys) {
+                if (e.Preset == ExpressionPreset.custom)
+                {
+                    if (e.Name.ToLower() == expressionName)
+                    {
+                        expressions[e] = BlendValue;
+                        found = true;
+                        break;
+                    }
+                }
+                else {
+                    if (e.Preset.ToString().ToLower() == expressionName)
+                    {
+                        expressions[e] = BlendValue;
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!found)
+            {
+                Debug.Log("Not found!" + expressionName);
+            }
         }
+
         else if (message.address == "/VMC/Ext/Blend/Apply")
         {
-            blendShapeProxy.Apply();
+            vrmRoot.Runtime.Expression.SetWeights(expressions);
+            expressions.Clear();
         }
     }
 }
