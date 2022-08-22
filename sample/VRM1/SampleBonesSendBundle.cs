@@ -150,18 +150,19 @@ public class SampleBonesSendBundle : MonoBehaviour
 
     private void OnGUI()
     {
-        if (RuntimeLoadGUI)
-        {
+        if (RuntimeLoadGUI) {
             var ButtonStyle = new GUIStyle(GUI.skin.button);
             ButtonStyle.fontSize = 24;
             var TextFieldStyle = new GUIStyle(GUI.skin.textField);
             TextFieldStyle.fontSize = 24;
+            var LabelStyle = new GUIStyle(GUI.skin.label);
+            LabelStyle.fontSize = 24;
 
             var path = GUILayout.TextField("C:\\default.vrm", TextFieldStyle);
-            if (GUILayout.Button("Load VRM", ButtonStyle))
-            {
+            if (GUILayout.Button("Load VRM", ButtonStyle)) {
                 LoadVRM(path);
             }
+            GUILayout.Label("Port:"+uClient.port, LabelStyle);
         }
     }
 
