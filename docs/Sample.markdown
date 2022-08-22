@@ -26,25 +26,6 @@ The license for this sample script is listed at the top of the source code.
 - VRM1:[VRM1](https://github.com/vrm-c/UniVRM)
 - [uOSC](https://github.com/hecomi/uOSC)
 
-# SampleBonesSend.cs
-Performer - モーション送信側サンプル(低速)です。  
-VRMモデルのroot位置、ボーン、BlendShapeProxyを送信します。
-
-uOSC Clientとともに使用します。
-細かくパケットを送信するため、低速になることがあります。
-
-ModelにVRMモデルのGameObjectを設定してください。
-filepathにVRMモデルのファイルパスを設定すると、自動読み込み対応アプリケーションは読み込みを行います。
-
-Performer - Motion sender samples (slow).  
-Send the root position, bones and BlendShapeProxy of the VRM model.
-
-Used with uOSC Client.  
-Since it sends packets in detail, it may become slow.
-
-Set the VRM model GameObject to Model.  
-If you set the file path of the VRM model in filepath, the auto-loading application will load it.
-
 # SampleBonesSendBundle.cs
 Performer - モーション送信側サンプル(高速)です。  
 VRMモデルのroot位置、ボーン、BlendShapeProxyを送信します。
@@ -55,6 +36,8 @@ uOSC Clientとともに使用します。
 ModelにVRMモデルのGameObjectを設定してください。
 filepathにVRMモデルのファイルパスを設定すると、自動読み込み対応アプリケーションは読み込みを行います。
 
+VRMのランタイムロード機能も搭載しています。
+
 Performer - Motion sender samples (fast).  
 Send the root position, bones and BlendShapeProxy of the VRM model.
 
@@ -63,6 +46,37 @@ It is relatively fast because packets are sent together (bundled).
 
 Set the VRM model GameObject to Model.  
 If you set the file path of the VRM model in filepath, the auto-loading application will load it.
+
+VRM runtime loading implemented.
+
+![runtimeload](runtimeload.png)
+
+# SampleBonesSend.cs
+Performer - モーション送信側サンプル(低速)です。  
+VRMモデルのroot位置、ボーン、BlendShapeProxyを送信します。
+
+uOSC Clientとともに使用します。
+細かくパケットを送信するため、低速になることがあります。
+
+ModelにVRMモデルのGameObjectを設定してください。
+filepathにVRMモデルのファイルパスを設定すると、自動読み込み対応アプリケーションは読み込みを行います。
+
+**このスクリプトの利用は推奨しません！！**
+このスクリプトは、学習用であり、必要な処理を欠いているため、通信バッファの詰まりを引き起こして、動作に異常な遅れを生じる場合があります。
+SampleBonesSendBundle.csの方を利用することを強く推奨します。
+
+Performer - Motion sender samples (slow).  
+Send the root position, bones and BlendShapeProxy of the VRM model.
+
+Used with uOSC Client.  
+Since it sends packets in detail, it may become slow.
+
+Set the VRM model GameObject to Model.  
+If you set the file path of the VRM model in filepath, the auto-loading application will load it.
+
+**NOT RECOMMENDED USE THIS SCRIPT!!**
+This script is for learning purposes only and lacks necessary processing, which can cause communication buffers to clog up and cause unusual delays in operation.
+It is strongly recommended to use SampleBonesSendBundle.cs.
 
 # SampleBonesReceive.cs
 Marionette - モーション受信側サンプルです。  

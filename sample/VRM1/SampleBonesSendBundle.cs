@@ -7,11 +7,15 @@
  * http://creativecommons.org/publicdomain/zero/1.0/deed.ja
  */
 using System;
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UniVRM10;
 using uOSC;
+using UniGLTF;
 
 [RequireComponent(typeof(uOSC.uOscClient))]
 public class SampleBonesSendBundle : MonoBehaviour
@@ -20,13 +24,14 @@ public class SampleBonesSendBundle : MonoBehaviour
 
     public GameObject Model = null;
     private GameObject OldModel = null;
+    public bool vrm0styleExpression = true;
+    public string vrmfilepath;
+    public bool RuntimeLoadGUI = true;
 
     Animator animator = null;
     Vrm10Instance vrmRoot = null;
 
-    public bool vrm0styleExpression = true;
-
-    public string filepath;
+    SynchronizationContext synchronizationContext;
 
     public enum VirtualDevice
     {
@@ -38,6 +43,7 @@ public class SampleBonesSendBundle : MonoBehaviour
     void Start()
     {
         uClient = GetComponent<uOSC.uOscClient>();
+        synchronizationContext = SynchronizationContext.Current;
     }
 
     void Update()
@@ -138,8 +144,25 @@ public class SampleBonesSendBundle : MonoBehaviour
         uClient.Send("/VMC/Ext/T", Time.time);
 
         //Load request
-        uClient.Send("/VMC/Ext/VRM", filepath, vrmRoot.Vrm.Meta.Name);
+        uClient.Send("/VMC/Ext/VRM", vrmfilepath, vrmRoot.Vrm.Meta.Name);
 
+    }
+
+    private void OnGUI()
+    {
+        if (RuntimeLoadGUI)
+        {
+            var ButtonStyle = new GUIStyle(GUI.skin.button);
+            ButtonStyle.fontSize = 24;
+            var TextFieldStyle = new GUIStyle(GUI.skin.textField);
+            TextFieldStyle.fontSize = 24;
+
+            var path = GUILayout.TextField("C:\\default.vrm", TextFieldStyle);
+            if (GUILayout.Button("Load VRM", ButtonStyle))
+            {
+                LoadVRM(path);
+            }
+        }
     }
 
     void SendBoneTransformForTracker(ref Bundle bundle, HumanBodyBones bone, string DeviceSerial)
@@ -157,4 +180,64 @@ public class SampleBonesSendBundle : MonoBehaviour
         (float)DeviceTransform.rotation.w));
         }
     }
+
+    //Load VRM file on runtime
+    public void LoadVRM(string path)
+    {
+        if (Model != null)
+        {
+            Destroy(Model);
+            Model = null;
+        }
+
+        if (File.Exists(path))
+        {
+            vrmfilepath = path;
+            byte[] VRMdataRaw = File.ReadAllBytes(path);
+            LoadVRMFromData(VRMdataRaw);
+        }
+        else
+        {
+            Debug.LogError("File not found: " + path);
+        }
+    }
+
+    //Load VRM data on runtime
+    //You can receive VRM over the network or file or other.
+    public void LoadVRMFromData(byte[] VRMdataRaw)
+    {
+        GlbLowLevelParser glbLowLevelParser = new GlbLowLevelParser(null, VRMdataRaw);
+        GltfData gltfData = glbLowLevelParser.Parse();
+        Vrm10Data vrm = Vrm10Data.Parse(gltfData);
+        GltfData migratedGltfData = null;
+
+        if (vrm == null) {
+            //Auto migration
+            MigrationData mdata;
+            migratedGltfData = Vrm10Data.Migrate(gltfData, out vrm, out mdata);
+            if (vrm == null) {
+                Debug.LogError(mdata.Message);
+                return;
+            }
+        }
+
+        Vrm10Importer vrmImporter = new Vrm10Importer(vrm);
+
+        synchronizationContext.Post(async (_) => {
+            RuntimeGltfInstance gltfInstance = await vrmImporter.LoadAsync(new VRMShaders.ImmediateCaller());
+            gltfData.Dispose();
+            vrmImporter.Dispose();
+
+            if (migratedGltfData != null) {
+                migratedGltfData.Dispose();
+            }
+
+            Model = gltfInstance.Root;
+            Model.transform.parent = this.transform;
+
+            gltfInstance.EnableUpdateWhenOffscreen();
+            gltfInstance.ShowMeshes();
+        }, null);
+    }
+
 }
