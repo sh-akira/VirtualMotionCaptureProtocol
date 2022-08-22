@@ -61,9 +61,9 @@ uOSC Clientとともに使用します。
 ModelにVRMモデルのGameObjectを設定してください。
 filepathにVRMモデルのファイルパスを設定すると、自動読み込み対応アプリケーションは読み込みを行います。
 
-**このスクリプトの利用は推奨しません！！**
-このスクリプトは、学習用であり、必要な処理を欠いているため、通信バッファの詰まりを引き起こして、動作に異常な遅れを生じる場合があります。
-SampleBonesSendBundle.csの方を利用することを強く推奨します。
+**このスクリプトの利用は推奨しません！！**  
+このスクリプトは、学習用であり、必要な処理を欠いているため、通信バッファの詰まりを引き起こして、動作に異常な遅れを生じる場合があります。  
+SampleBonesSendBundle.csの方を利用することを強く推奨します。  
 
 Performer - Motion sender samples (slow).  
 Send the root position, bones and BlendShapeProxy of the VRM model.
@@ -74,9 +74,9 @@ Since it sends packets in detail, it may become slow.
 Set the VRM model GameObject to Model.  
 If you set the file path of the VRM model in filepath, the auto-loading application will load it.
 
-**NOT RECOMMENDED USE THIS SCRIPT!!**
-This script is for learning purposes only and lacks necessary processing, which can cause communication buffers to clog up and cause unusual delays in operation.
-It is strongly recommended to use SampleBonesSendBundle.cs.
+**NOT RECOMMENDED USE THIS SCRIPT!!**  
+This script is for learning purposes only and lacks necessary processing, which can cause communication buffers to clog up and cause unusual delays in operation.  
+It is strongly recommended to use SampleBonesSendBundle.cs.  
 
 # SampleBonesReceive.cs
 Marionette - モーション受信側サンプルです。  
