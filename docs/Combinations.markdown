@@ -28,6 +28,7 @@ English version is prepering.
 |EVMC4U|VMCProtocolを受信して、Unity上のVRMモデルの動きに変換します|-|39539|
 
 ## 表情(iPhone) → VR機器(VMC) → Uinty
+
 |アプリ|説明|送信ポート|受信ポート|
 |-|-|-|-|
 |waidayo|Face IDで取得した表情を、VRMモデルの表情に変換して、VMCProtocolで送信します|39540|-|
@@ -35,6 +36,7 @@ English version is prepering.
 |EVMC4U|VMCProtocolを受信して、Unity上のVRMモデルの動きに変換します|-|39539|
 
 ## 表情(iPhone) → Uinty
+
 |アプリ|説明|送信ポート|受信ポート|
 |-|-|-|-|
 |waidayo|Face IDで取得した表情を、VRMモデルの表情に変換して、VMCProtocolで送信します|39539|-|
@@ -55,6 +57,7 @@ English version is prepering.
 |EVMC4U|VMCProtocolを受信して、Unity上のVRMモデルの動きに変換します|-|39539|
 
 ## 表情(iPhone) → VMC
+
 |アプリ|説明|送信ポート|受信ポート|
 |-|-|-|-|
 |waidayo|Face IDで取得した表情を、VRMモデルの表情に変換して、VMCProtocolで送信します|39540|-|
