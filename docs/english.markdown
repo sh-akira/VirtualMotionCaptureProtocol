@@ -16,8 +16,6 @@ You can easily move your avatar by using an easy-to-use library without implemen
 
 [You can send and receive motions to and from various applications. ](Reference).
 
-[Sample implement](Sample)
-
 It is a simple implementation using Open Sound Control and VRM, and can communicate with various environments such as Windows, Mac, Linux, and iOS on machine internal or local network. 
 
 {% include youtubePlayer.html id="DunqgLrUfpI" %}
@@ -34,6 +32,12 @@ VMC Protocol-enabled applications can use the following logos.
 
 ![logo](vmpc_logo_128x128.png)  
 [larger logo](vmpc_logo_1024x1024.png)
+
+# [Sample](Sample)
+[Sample implementation](Sample)
+
+# [Combinations(Combinations)
+[Application Combinations](Combinations)
 
 # Licence
 MIT Licence
