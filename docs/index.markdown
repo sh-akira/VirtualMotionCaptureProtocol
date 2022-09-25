@@ -80,4 +80,8 @@ VRM規格で作成されたVRモデルの
 本ページに関して問題がある場合、[Issue](https://github.com/sh-akira/VirtualMotionCaptureProtocol/issues)よりお知らせください。  
 
 Virtual Motion Capture Protocolは、[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)の製作者であるgpsnmeajpが主にメンテナンスしています。  
+
+**注意: EVMC4UおよびVMCProtocolの製作者(gpsnmeajp)は、バーチャルモーションキャプチャーの製作者(sh-akira)ではありません。バーチャルモーションキャプチャーのdiscordはFanbox/Patreonに記載されています。**  
+**Note: The creator of EVMC4U and VMCProtocol (gpsnmeajp) is not the creator of Virtual Motion Capture (sh-akira). The virtual motion capture discord is listed on Fanbox/Patreon.**
+
 [お問い合わせはEVMC4UのDiscordへお願いします。](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity/wiki/Discord)
