@@ -26,6 +26,12 @@ The license for this sample script is listed at the top of the source code.
 - VRM1:[VRM1](https://github.com/vrm-c/UniVRM)
 - [uOSC](https://github.com/hecomi/uOSC)
 
+# 手持ちのVRMがバージョン0か1かわからない場合 / If you don't know if your VRM is version 0 or 1
+EVRMCheckerを使用してください。  
+Use EVRMChecker.  
+
+https://github.com/gpsnmeajp/EVRMChecker
+
 # SampleBonesSendBundle.cs
 Performer - モーション送信側サンプル(高速)です。  
 VRMモデルのroot位置、ボーン、BlendShapeProxyを送信します。
