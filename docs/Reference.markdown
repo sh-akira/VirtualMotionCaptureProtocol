@@ -10,9 +10,12 @@ hero_darken: true
 
 ---
 
-# リファレンス実装
-- [バーチャルモーションキャプチャー - VirtualMotionCapture](https://vmc.info/) - VR機器でVRMの3Dモデルをコントロール(ExternalSenderフォルダ内のスクリプト)
-- [EVMC4U(受信ライブラリ)](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity) - Unity向けモーション受信アセット(すべてのReceiver系スクリプト)
+# リファレンス実装 Reference Implementation
+すべてのVMCProtocolソフトウェアは、この2つとの組み合わせで動作することを確認することを強く推奨します。  
+It is highly recommended that all VMCProtocol software be verified to work in combination with the two.  
+
+- [バーチャルモーションキャプチャー - VirtualMotionCapture](https://vmc.info/) - VR機器でVRMの3Dモデルをコントロール
+- [EVMC4U(受信ライブラリ)](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity) - Unity向けモーション受信アセット
 
 # 採用事例
 
