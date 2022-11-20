@@ -28,6 +28,8 @@ hero_darken: true
 - [Webcam Motion Capture](https://webcammotioncapture.info/ja/index.php) - Webカメラや動画による顔・表情・指および腕のモーションキャプチャ。Windows/Mac対応
 - [MocapForStreamer](https://akiya-souken.booth.pm/items/3945408) - Webカメラ2台を用いた上半身の簡易モーションキャプチャ
 - [VroidPoser](https://github.com/NeilioClown/VroidPoser) - VroidPoser - a pose creator/animator for VSeeFace
+- [Free Webcam Hand Tracking Software with VMC for VSeeFace](https://booth.pm/en/items/4275972) - Web cam hand tracking
+- [VRigUnity](https://github.com/Kariaro/VRigUnity) - Unity VRM Visualizer with Mediapipe Holistic integration
 
 # Assistant(拡張情報送信, 表情・視線・一部ボーンなどのみ)アプリケーション
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)
@@ -61,6 +63,7 @@ hero_darken: true
 - [VUP](https://store.steampowered.com/news/app/1207050/view/3091152381741795245) - VTuber & Animation & motion capture & 3D & Live2D
 - [VRoom](https://ojousamaya.booth.pm/items/3949561) - Vtuber向け3D配信部屋アプリ
 - [VTuber Plus](https://vtuberplus.com/) - VTuber Plus is a highly customizable tool that allows Twitch viewers to interact with streamers!
+- [VNyan](https://suvidriel.itch.io/vnyan) - VNyan is a 3D VTuber Front end application for bringing your VTubing to the next level. ノードベースでプログラミング可能なVtuber向け統合演出環境
 
 ### 映像支援ツール
 - [VMC-Websocket-OBS](https://github.com/gpsnmeajp/VMC-Websocket-OBS) - VMCProtocolを用いてバーチャルモーションキャプチャーの状態を取得し、Websocketを用いてOBSを制御するソフトウェア
