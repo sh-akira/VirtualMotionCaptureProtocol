@@ -34,6 +34,9 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [Free Webcam Hand Tracking Software with VMC for VSeeFace](https://booth.pm/en/items/4275972) - Web cam hand tracking
 - [VRigUnity](https://github.com/Kariaro/VRigUnity) - Unity VRM Visualizer with Mediapipe Holistic integration
 - [Tracking World](http://deatrathias.net/TW/) - A tool to manipulate a model using VR
+- [VRM Posing Desktop / VRMポージング・デスクトップ (Windows/Mac)](https://store.steampowered.com/app/1895630/VRM/) - VRMファイルから3Dモデルに様々なポージングさせることができるツール。単体での高度な撮影機能の他、姿勢や表情の送信も対応。
+- [VRM Posing Mobile / VRMポージング・モバイル (iOS)](https://apps.apple.com/jp/app/vrm-posing-mobile/id1601640655) - VRMファイルから3Dモデルに様々なポージングさせることができるツール。単体での高度な撮影機能の他、姿勢や表情の送信も対応。
+- [VRM Posing Mobile / VRMポージング・モバイル (Android)](https://play.google.com/store/apps/details?id=com.soarhap.vrmposing&hl=ja&gl=US&pli=1) - VRMファイルから3Dモデルに様々なポージングさせることができるツール。単体での高度な撮影機能の他、姿勢や表情の送信も対応。
 
 # Assistant(拡張情報送信, 表情・視線・一部ボーンなどのみ)アプリケーション
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)
@@ -44,6 +47,8 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [VMCProtocolRotationCamera](https://github.com/gpsnmeajp/VMCProtocolRotationCamera) - VMCProtocolでバーチャルモーションキャプチャーのカメラを回すだけのツール(カメラ制御)
 - [Uni-studio](https://unimotioninfo.wixsite.com/guide) - 全身フルトラッキングモーションシステム「Uni-motion」(トラッカー姿勢情報)
 - [kaodayo](https://booth.pm/ja/items/3281659) - iFacialMocap通信仕様をVMCProtocolに変換し、表情情報を送信する
+- [T.I.T.S(Twitch Integrated Throwing System)](https://remasuri3.itch.io/tits) - Twitch統合物投げシステム
+- [SVIFT - Suvi's VTuber Integration For Twitch](http://suvidriel.com/) - Allows integration of Twitch to VRChat and VSeeFace through OSC and VMC-protocols
 
 # Marionette(モーション受信)アプリケーション
 ### ライブラリ/アドオン
@@ -62,7 +67,6 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [VSeeFace](https://www.vseeface.icu/) - VSeeFace is a free, highly configurable face and hand tracking VRM avatar puppeteering program.
 - [VtubeReflect](https://oose.itch.io/vtubereflect) - VtubeReflect captures your desktop and projects light onto your vtuber avatar.
 - [VMCSaberTraining](https://fubukisakura.booth.pm/items/2374515) - きれいなセーバーを振り回せるツール
-- [VRM Posing Desktop](https://store.steampowered.com/app/1895630/VRM/) - VRMファイルから3Dモデルにポージングさせることができるツール
 - [Horror Light](https://halfsode.booth.pm/items/3558017) - 暗い部屋でホラーゲームをやっているようなライティングに特化したアバター映像を出力するツール
 - [VUP](https://store.steampowered.com/news/app/1207050/view/3091152381741795245) - VTuber & Animation & motion capture & 3D & Live2D
 - [VRoom](https://ojousamaya.booth.pm/items/3949561) - Vtuber向け3D配信部屋アプリ
