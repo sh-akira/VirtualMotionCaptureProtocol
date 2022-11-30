@@ -49,12 +49,13 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [kaodayo](https://booth.pm/ja/items/3281659) - iFacialMocap通信仕様をVMCProtocolに変換し、表情情報を送信する
 - [T.I.T.S(Twitch Integrated Throwing System)](https://remasuri3.itch.io/tits) - Twitch統合物投げシステム
 - [SVIFT - Suvi's VTuber Integration For Twitch](http://suvidriel.com/) - Allows integration of Twitch to VRChat and VSeeFace through OSC and VMC-protocols
+- [Uni-motion / Uni-studio](https://unimotioninfo.wixsite.com/guide/upperbodymode) - IMUトラッカーの情報を仮想トラッカー情報として送信
 
 # Marionette(モーション受信)アプリケーション
 ### ライブラリ/アドオン
 - **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity向けモーション受信アセット(UniVRMと併用して使用する)
 - **[VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)** - Unreal Engine向けモーション受信プラグイン(VRM4Uと併用して使用する)
-- **[VRM4U](https://ruyo.github.io/VRM4U/)** - Unreal Engine 4で動作するVRMファイルのインポーター(単体で対応、必要に合わせてVMC4UEと使い分け)
+- **[VRM4U](https://ruyo.github.io/VRM4U/)** - Unreal Engine 4で動作するVRMファイルのインポーター(単体で対応、必要に合わせてVMC4UEと使い分け) [接続手順](https://ruyo.github.io/VRM4U/08_vmc/)
 - **[VMC4B Blender addon for VMCProtocol](https://tonimono.booth.pm/items/3432915)** - Blender向けモーション受信アドオン
 - [hVMCP](https://github.com/Cj-bc/hVMCP) - Haskell版VMCProtocol実装(GPL)
 
@@ -92,16 +93,38 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [MotionReplay](https://github.com/emilianavt/MotionReplay) - This is a very simple debugging tool for VMC protocol applications 
 - [BlendShapeClip Viewer v1.00](https://halfsode.booth.pm/items/4017038) - パーフェクトシンクの現象再現・修正支援ツール
 
+# その他
+- [Roid1 URDF を VMCプロトコル で動かすもの](https://github.com/kirurobo/Roid1_VMCProtocol) - サーボロボットをモーションデータで制御
+
 # 依存ライブラリ
 - [UniVRM 0.53(Unity環境 必須)](https://github.com/vrm-c/UniVRM)
 - [uOSC(Unity環境 推奨)](https://github.com/hecomi/uOSC)
 
-# 解説記事
+# 解説記事・関連記事
+- [トラッキングできたら アバターを動かしたい！](https://speakerdeck.com/sh_akira/toratukingudekitara-abatawodong-kasitai)
+- [3周年のばもきゃと歩んだ人生を振り返る～2020年～](https://akira.fanbox.cc/posts/2477224)
 - [Xbox360版KinectによるVMCProtocolを使用した姿勢情報の送信、VRMモデル操作について @daifuk-lana](https://qiita.com/daifuk-lana/items/c098fe9977c5e1202acb)
-- [PythonからVMC Protocolでばもきゃに情報を送信してみよう](https://takeda-san.hatenablog.com/entry/2021/12/12/005347
+- [PythonからVMC Protocolでばもきゃに情報を送信してみよう](https://takeda-san.hatenablog.com/entry/2021/12/12/005347)
 - [How to connect Unity and virtual motion capture with EVMC4U](https://styly.cc/tips/evmc4u_rapturn_virtualmotioncapture/)
+- [VMCProtcolを使って連鎖的にいろんなソフトを繋いで Blenderに表情からつま先まで全身のモーションを流し込む方法 @KEI_unr ](https://qiita.com/KEI_unr/items/63badaba173ef59659ce)
+- [EVMC4UでUnityとバーチャルモーションキャプチャーをつなぐ方法 styly.cc](https://styly.cc/ja/tips/evmc4u_rapturn_virtualmotioncapture/)
+- [TDPT + VMCプロトコル on WebRTC](https://www.slideshare.net/hironroinakae/tdpt-vmc-on-webrtc)
+- [VRoidってすげえ！って話(その2)　バーチャルモーションキャプチャー(VMCプロトコル)｜たつ @Tatsu_cp](https://note.com/tatsu_cpt/n/n233bb340bf3f)
+- [【VRChat】VMC&EVMC4Uを使ってモーションエモートを作ってみた！！](https://keiki002.com/vr/vmc-emote/)
+- [VroidStudio Unity - Sending to Unity using OSC/VMC Receiver](https://www.youtube.com/watch?v=Pl-XMcIm1qI)
+- [How to create your own VTuber app in Unity Engine with OSC/VMC](https://www.youtube.com/watch?v=UiRfnriKmBY)
+- [ツールを駆使してVTuberになろう - ギャップロ](https://gaprot.jp/2021/04/06/vtuber-toos/)
+- [【Unity】VRecのBlendShapeをパーフェクトシンクに対応させる](https://wakushika-blog.com/unity-vrec-perfectsink/)
+- [Unity上のモーションでUE4のモデルを動かしてみた](https://dev.classmethod.jp/articles/vmc_to_mop_ue4_mocap_test/)
+- [WebカメラだけでmediapipeとVSeeFace(without Leap Motion)でVRMモデルを動かす実験メモ](https://angelpinpoint.seesaa.net/article/483827280.html)
+- [パーフェクトシンクであそぼう！](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
 - [その他Qiitaの記事](https://qiita.com/tags/vmcprotocol)
 - [その他Noteの記事](https://note.com/search?q=VMCProtocol)
+
+# メディア記事
+- [ソニー、小型モーションキャプチャ「mocopi」の使い方。連携で“ガチ運用”も - AV Watch](https://av.watch.impress.co.jp/docs/news/1460099.html)
+- [iPhoneを使ったモーションキャプチャーツール「waidayo」配信 - MoguLive](https://www.moguravr.com/waidayo/)
+- [今すぐVTuberになれる！ お手軽ツール37選を徹底紹介 - MoguLive](https://www.moguravr.com/vtuber-tools/)
 
 # 学術研究
 - [安価なVR機器を用いた民族舞踊保存手法の検討 - 電子情報通信学会](https://www.ieice.org/)
