@@ -152,7 +152,7 @@ V2.9
 VMCのDirectionalLightの位置・色  
 前半がPosition、後半がQuaternionと色  
 
-### Shortcut呼び出し(Call Shortcut)
+### 【イベント送信】Shortcut呼び出し(Call Shortcut)
 ```
 V3.1
 /VMC/Ext/Set/Shortcut (string){shortcut}

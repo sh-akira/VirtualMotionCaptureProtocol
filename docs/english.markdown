@@ -551,7 +551,7 @@ p=Position
 q=Quaternion   
 color=color  
 
-### Call Shortcut
+### 【Event send】Call Shortcut
 ```
 V3.1
 /VMC/Ext/Set/Shortcut (string){shortcut}
