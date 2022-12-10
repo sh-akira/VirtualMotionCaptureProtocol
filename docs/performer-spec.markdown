@@ -151,4 +151,18 @@ V2.9
 ```
 VMCのDirectionalLightの位置・色  
 前半がPosition、後半がQuaternionと色  
-V2.9 リファレンス未実装
+
+### Shortcut呼び出し(Call Shortcut)
+```
+V3.1
+/VMC/Ext/Set/Shortcut (string){shortcut}
+```
+VMCのShortcutを呼び出す。
+
+例
+
+```
+/VMC/Ext/Set/Shortcut Functions.FreeCamera
+/VMC/Ext/Set/Shortcut Functions.ColorGreen
+/VMC/Ext/Set/Shortcut Functions.ShowCalibrationWindow
+```

@@ -550,3 +550,18 @@ VMC DirectionalLight position and color.
 p=Position  
 q=Quaternion   
 color=color  
+
+### Call Shortcut
+```
+V3.1
+/VMC/Ext/Set/Shortcut (string){shortcut}
+```
+Call VMC Shortcut
+
+example
+
+```
+/VMC/Ext/Set/Shortcut Functions.FreeCamera
+/VMC/Ext/Set/Shortcut Functions.ColorGreen
+/VMC/Ext/Set/Shortcut Functions.ShowCalibrationWindow
+```
