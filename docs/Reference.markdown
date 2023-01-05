@@ -118,6 +118,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [Unity上のモーションでUE4のモデルを動かしてみた](https://dev.classmethod.jp/articles/vmc_to_mop_ue4_mocap_test/)
 - [WebカメラだけでmediapipeとVSeeFace(without Leap Motion)でVRMモデルを動かす実験メモ](https://angelpinpoint.seesaa.net/article/483827280.html)
 - [パーフェクトシンクであそぼう！](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
+- [バーチャルモーションキャプチャーへのプルリクまとめと、内部構造メモ](https://note.com/gpsnmeajp/n/n7d741691a126)
 - [その他Qiitaの記事](https://qiita.com/tags/vmcprotocol)
 - [その他Noteの記事](https://note.com/search?q=VMCProtocol)
 
