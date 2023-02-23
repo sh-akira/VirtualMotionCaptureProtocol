@@ -73,6 +73,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [VRoom](https://ojousamaya.booth.pm/items/3949561) - Vtuber向け3D配信部屋アプリ
 - [VTuber Plus](https://vtuberplus.com/) - VTuber Plus is a highly customizable tool that allows Twitch viewers to interact with streamers!
 - [VNyan](https://suvidriel.itch.io/vnyan) - VNyan is a 3D VTuber Front end application for bringing your VTubing to the next level. ノードベースでプログラミング可能なVtuber向け統合演出環境
+- [DAN SING](https://store.steampowered.com/app/1688750/AMV_Maker_for_Vroid_VRM_and_MMD_Mac_Supported/) - Music video tool using avatars, アバターを使ったミュージックビデオ撮影ツール
 - [Animaze by FaceRig](https://www.animaze.us/manual/vmc-guide) -  Livestream, video chat, and record videos as incredible 2D and 3D avatars. (VMC Protocol only supports 3D avatars). 元祖バーチャルキャラクター撮影ツール(VMCProtocolは3Dのみ対応)
 
 ### 映像支援ツール / Live stream helper apps
