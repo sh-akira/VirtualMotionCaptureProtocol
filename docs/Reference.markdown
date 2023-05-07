@@ -37,6 +37,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [VRM Posing Desktop / VRMポージング・デスクトップ (Windows/Mac)](https://store.steampowered.com/app/1895630/VRM/) - VRMファイルから3Dモデルに様々なポージングさせることができるツール。単体での高度な撮影機能の他、姿勢や表情の送信も対応。
 - [VRM Posing Mobile / VRMポージング・モバイル (iOS)](https://apps.apple.com/jp/app/vrm-posing-mobile/id1601640655) - VRMファイルから3Dモデルに様々なポージングさせることができるツール。単体での高度な撮影機能の他、姿勢や表情の送信も対応。
 - [VRM Posing Mobile / VRMポージング・モバイル (Android)](https://play.google.com/store/apps/details?id=com.soarhap.vrmposing&hl=ja&gl=US&pli=1) - VRMファイルから3Dモデルに様々なポージングさせることができるツール。単体での高度な撮影機能の他、姿勢や表情の送信も対応。
+- [XR Animator](https://xr-animator.booth.pm/items/4513654) - AIベース (MediaPipe) の全身モーション キャプチャ
 
 # Assistant(拡張情報送信, 表情・視線・一部ボーンなどのみ)アプリケーション / Faicial or other sender
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)
@@ -50,6 +51,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [T.I.T.S(Twitch Integrated Throwing System)](https://remasuri3.itch.io/tits) - Twitch統合物投げシステム
 - [SVIFT - Suvi's VTuber Integration For Twitch](http://suvidriel.com/) - Allows integration of Twitch to VRChat and VSeeFace through OSC and VMC-protocols
 - [Uni-motion / Uni-studio](https://unimotioninfo.wixsite.com/guide/upperbodymode) - IMUトラッカーの情報を仮想トラッカー情報として送信
+- [VRCFTtoVMCP](https://github.com/tkns3/VRCFTtoVMCP) - VRCFaceTracking からフェイストラッキングデータを受け取り、そのデータを PerfectSync の Blendshape に変換して VMCProtocol で送信する Windows アプリ
 
 # Marionette(モーション受信)アプリケーション / Receiver apps
 ### ライブラリ/アドオン / Library and addon

@@ -67,6 +67,8 @@ UX観点より送信アドレス・受信ポートを変更可能にすること
 + 不明なアドレス、多すぎる引数は無視する必要があります。
 + 拡張仕様として定義されている以上に少なすぎる引数、型の違う引数を検出した場合はエラーとするか無視してください。
 
+[高度な表情追跡に用いるPerfectSyncについてはこちらを参照](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
+
 # OSCのデバッグ
 データのチェックには以下が便利です。  
 [VMCProtocolMonitor](https://github.com/gpsnmeajp/VMCProtocolMonitor)

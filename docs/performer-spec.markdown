@@ -54,6 +54,8 @@ V2.3
 ```
 BlendShapeProxyの値
 
+[高度な表情追跡に用いるPerfectSyncについてはこちらを参照](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
+
 **VRM0系とVRM1系の非互換性に関する警告**
 
 既存のVMCProtcol準拠のアプリケーションは、VRM0を使用しています。  

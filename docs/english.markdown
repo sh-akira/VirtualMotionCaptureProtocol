@@ -96,6 +96,8 @@ It works client to Performer, commonly send to 39540.
 + Unknown addresses and too many arguments should be ignored.
 + If you detect an argument that has too few arguments or an argument of a different type than defined as an extended specification, it must an ignored.
 
+[See here for PerfectSync used for advanced facial expression tracking](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
+
 # OSC Debugging
 Recommended tools  
 [VMCProtocolMonitor](https://github.com/gpsnmeajp/VMCProtocolMonitor)
@@ -196,6 +198,8 @@ BlendShapeProxy value in VRM model.
 After all have been sent, **apply** will be sent.
 
 Facial expressions and lip sync are sent this.
+
+[See here for PerfectSync used for advanced facial expression tracking](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
 
 **VRM0 vs VRM1 Incompatibility Warning**
 
@@ -453,6 +457,8 @@ V2.3
 /VMC/Ext/Blend/Val (string){name} (float){value}  
 /VMC/Ext/Blend/Apply
 ```
+
+[See here for PerfectSync used for advanced facial expression tracking](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
 
 **VRM0 vs VRM1 Incompatibility Warning**
 
