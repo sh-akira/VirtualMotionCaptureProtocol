@@ -98,6 +98,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [BlendShapeClip Viewer v1.00](https://halfsode.booth.pm/items/4017038) - パーフェクトシンクの現象再現・修正支援ツール
 
 # その他 / Other
+- [VMCPViewerVR](https://github.com/gpsnmeajp/VMCPViewerVR) - VMCProtocol経由で送られてきた姿勢を反映し、VRゴーグルで鑑賞するためのソフト
 - [Roid1 URDF を VMCプロトコル で動かすもの](https://github.com/kirurobo/Roid1_VMCProtocol) - サーボロボットをモーションデータで制御
 
 # 依存ライブラリ / Dependency
