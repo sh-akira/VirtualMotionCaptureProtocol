@@ -53,6 +53,12 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [Uni-motion / Uni-studio](https://unimotioninfo.wixsite.com/guide/upperbodymode) - IMUトラッカーの情報を仮想トラッカー情報として送信
 - [VRCFTtoVMCP](https://github.com/tkns3/VRCFTtoVMCP) - VRCFaceTracking からフェイストラッキングデータを受け取り、そのデータを PerfectSync の Blendshape に変換して VMCProtocol で送信する Windows アプリ
 
+# Coordinator(中間加工)アプリケーション / Relay Mix apps
+- ~~[VMCProtocolMultiplexer](https://github.com/gpsnmeajp/VMCProtocolMultiplexer) - VMCProtocolを分配するソフトウェア。複数の入出力を持ち、配送先を自由に設定することができる。~~ (非推奨。VMCProtocolReflectorを使ってください)
+- **[VMCProtocolReflector](https://github.com/gpsnmeajp/VMCProtocolReflector)** - VMCProtocolを再配信するソフトウェア。1入力多出力で、1つのモーションや表情データを、複数のVMCProtocol対応ソフトウェアに送信することができます。
+- [Remote Marionette](https://www.machanbazaar.com/remotemarionette/) - WebRTC(SkyWay)を用いてVMCProtocolを遠隔地に中継するソフトウェア。
+- **[VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936)** - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。
+
 # Marionette(モーション受信)アプリケーション / Receiver apps
 ### ライブラリ/アドオン / Library and addon
 - **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity向けモーション受信アセット(UniVRMと併用して使用する)
@@ -77,6 +83,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [VNyan](https://suvidriel.itch.io/vnyan) - VNyan is a 3D VTuber Front end application for bringing your VTubing to the next level. ノードベースでプログラミング可能なVtuber向け統合演出環境
 - [DAN SING](https://store.steampowered.com/app/1688750/AMV_Maker_for_Vroid_VRM_and_MMD_Mac_Supported/) - Music video tool using avatars, アバターを使ったミュージックビデオ撮影ツール
 - [Animaze by FaceRig](https://www.animaze.us/manual/vmc-guide) -  Livestream, video chat, and record videos as incredible 2D and 3D avatars. (VMC Protocol only supports 3D avatars). 元祖バーチャルキャラクター撮影ツール(VMCProtocolは3Dのみ対応)
+- [VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936) - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。
 
 ### 映像支援ツール / Live stream helper apps
 - [VMC-Websocket-OBS](https://github.com/gpsnmeajp/VMC-Websocket-OBS) - VMCProtocolを用いてバーチャルモーションキャプチャーの状態を取得し、Websocketを用いてOBSを制御するソフトウェア
@@ -89,11 +96,8 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [VMCAvatar-BS](https://github.com/nagatsuki/VMCAvatar-BS) - Beat Saber内にアバターを表示するMod
 
 # 開発者向けツール / For developver apps
-- ~~[VMCProtocolMultiplexer](https://github.com/gpsnmeajp/VMCProtocolMultiplexer) - VMCProtocolを分配するソフトウェア。複数の入出力を持ち、配送先を自由に設定することができる。~~ (非推奨。VMCProtocolReflectorを使ってください)
 - [VMCProtocolMonitor](https://github.com/gpsnmeajp/VMCProtocolMonitor) - MarionetteとしてVMCProtocolの受信内容を表示するソフトウェア。 ごく単純に受信内容をコンソールに流すモードと、VMCProtocolに基づいてブラウザに一覧表示するモードがあります。
 - [VMCProtocolModelViewer](https://github.com/gpsnmeajp/VMCProtocolModelViewer) - VMCProtocolの受信内容をVMC互換で表示するソフトウェア。バーチャルモーションキャプチャーとほぼ同等の表示を実現しようとします。
-- [VMCProtocolReflector](https://github.com/gpsnmeajp/VMCProtocolReflector) - VMCProtocolを再配信するソフトウェア。1入力多出力で、1つのモーションや表情データを、複数のVMCProtocol対応ソフトウェアに送信することができます。
-- [Remote Marionette](https://www.machanbazaar.com/remotemarionette/) - WebRTC(SkyWay)を用いてVMCProtocolを遠隔地に中継するソフトウェア。
 - [MotionReplay](https://github.com/emilianavt/MotionReplay) - This is a very simple debugging tool for VMC protocol applications 
 - [BlendShapeClip Viewer v1.00](https://halfsode.booth.pm/items/4017038) - パーフェクトシンクの現象再現・修正支援ツール
 
