@@ -39,7 +39,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [VRM Posing Mobile / VRMポージング・モバイル (Android)](https://play.google.com/store/apps/details?id=com.soarhap.vrmposing&hl=ja&gl=US&pli=1) - VRMファイルから3Dモデルに様々なポージングさせることができるツール。単体での高度な撮影機能の他、姿勢や表情の送信も対応。
 - [XR Animator](https://xr-animator.booth.pm/items/4513654) - AIベース (MediaPipe) の全身モーション キャプチャ
 - [LuppetX](https://luppet.jp/) - WebカメラとLeapMotionだけで使える3DバーチャルYoutuber向けトラッキングシステム
-
+- [iFacialMocap Powered by NVIDIA Broadcast](https://apps.microsoft.com/store/detail/ifacialmocap-powered-by-nvidia-broadcast/9N01FGS2ZK3X) - NVIDIA RTXシリーズGPUとNVIDIA ARSDKを用いて、Webカメラによる高度なフェイストラッキングを実現します
 
 # Assistant(拡張情報送信, 表情・視線・一部ボーンなどのみ)アプリケーション / Faicial or other sender
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)
