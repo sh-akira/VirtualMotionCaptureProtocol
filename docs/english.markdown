@@ -199,7 +199,12 @@ After all have been sent, **apply** will be sent.
 
 Facial expressions and lip sync are sent this.
 
+Note that due to changes in the UniVRM specification, it is Case Sensitive.  
+In permissive applications (including those using EVMC4U), case sensitivity is ignored, mainly to maintain compatibility, but otherwise it does not work properly.  
+
 [See here for PerfectSync used for advanced facial expression tracking](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
+
+https://docs.unity3d.com/ja/Packages/com.unity.xr.arkit@5.1/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html
 
 **VRM0 vs VRM1 Incompatibility Warning**
 
@@ -458,7 +463,12 @@ V2.3
 /VMC/Ext/Blend/Apply
 ```
 
+Note that due to changes in the UniVRM specification, it is Case Sensitive.  
+In permissive applications (including those using EVMC4U), case sensitivity is ignored, mainly to maintain compatibility, but otherwise it does not work properly.  
+
 [See here for PerfectSync used for advanced facial expression tracking](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
+
+https://docs.unity3d.com/ja/Packages/com.unity.xr.arkit@5.1/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html
 
 **VRM0 vs VRM1 Incompatibility Warning**
 

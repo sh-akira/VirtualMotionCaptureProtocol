@@ -54,7 +54,12 @@ V2.3
 ```
 BlendShapeProxyの値
 
+UniVRMの仕様変更に伴い、Case Sensitiveなため注意すること。  
+寛容なアプリケーション(EVMC4Uを使用している場合を含む)では、主に互換性維持のために大文字小文字の違いは無視されるが、そうでないアプリケーションでは正常に動作しない。  
+
 [高度な表情追跡に用いるPerfectSyncについてはこちらを参照](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
+
+https://docs.unity3d.com/ja/Packages/com.unity.xr.arkit@5.1/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html
 
 **VRM0系とVRM1系の非互換性に関する警告**
 
