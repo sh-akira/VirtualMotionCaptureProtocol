@@ -11,8 +11,10 @@ hero_darken: true
 ---
 
 # リファレンス実装 Reference Implementation
-すべてのVMCProtocolソフトウェアは、下記リファレンス実装と送受信できることを確認することを強く推奨します。  
-It is highly recommended that all VMCProtocol software be verified to be able to send and receive from/to the reference implementations below.
+**すべてのVMCProtocolソフトウェアは、下記リファレンス実装と送受信できることを確認することを強く推奨します。**  
+**一部のソフトウェアでしか動作しない(例えばボーン情報が破損している)データを送信している例を確認しています。**  
+It is highly recommended that all VMCProtocol software be verified to be able to send and receive from/to the reference implementations below.  
+We have identified examples of data being sent that only works with some software (e.g., corrupted bone information).
 
 - [バーチャルモーションキャプチャー - VirtualMotionCapture](https://vmc.info/) - VR機器でVRMの3Dモデルをコントロール
 - [EVMC4U(受信ライブラリ)](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity) - Unity向けモーション受信アセット
@@ -86,6 +88,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 - [DAN SING](https://store.steampowered.com/app/1688750/AMV_Maker_for_Vroid_VRM_and_MMD_Mac_Supported/) - Music video tool using avatars, アバターを使ったミュージックビデオ撮影ツール
 - [Animaze by FaceRig](https://www.animaze.us/manual/vmc-guide) -  Livestream, video chat, and record videos as incredible 2D and 3D avatars. (VMC Protocol only supports 3D avatars). 元祖バーチャルキャラクター撮影ツール(VMCProtocolは3Dのみ対応)
 - [VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936) - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。
+- [VMagicMirror](https://baku-dreameater.booth.pm/items/1272298) - VRMをキーボードとマウスだけで動かせるWindows向けソフト
 
 ### 映像支援ツール / Live stream helper apps
 - [VMC-Websocket-OBS](https://github.com/gpsnmeajp/VMC-Websocket-OBS) - VMCProtocolを用いてバーチャルモーションキャプチャーの状態を取得し、Websocketを用いてOBSを制御するソフトウェア
@@ -106,6 +109,7 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 # その他 / Other
 - [VMCPViewerVR](https://github.com/gpsnmeajp/VMCPViewerVR) - VMCProtocol経由で送られてきた姿勢を反映し、VRゴーグルで鑑賞するためのソフト
 - [Roid1 URDF を VMCプロトコル で動かすもの](https://github.com/kirurobo/Roid1_VMCProtocol) - サーボロボットをモーションデータで制御
+- [DesktopFullTrackingVMCP](https://kirisamenanoha.booth.pm/items/5030353) - デスクトップフルトラアプリ
 
 # 依存ライブラリ / Dependency
 - [UniVRM 0.53(Unity環境 必須)](https://github.com/vrm-c/UniVRM)
