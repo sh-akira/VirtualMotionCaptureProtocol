@@ -17,16 +17,16 @@ It is highly recommended that all VMCProtocol software be verified to be able to
 We have identified examples of data being sent that only works with some software (e.g., corrupted bone information).
 
 - [バーチャルモーションキャプチャー - VirtualMotionCapture](https://vmc.info/) - VR機器でVRMの3Dモデルをコントロール
-- [EVMC4U(受信ライブラリ)](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity) - Unity向けモーション受信アセット
+- [EVMC4U(受信ライブラリ)](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity) - Unity向けモーション受信アセット【VRM0/VRM1両対応】
 
 # 採用事例 / Usecases
 
 # Performer(モーション送信, 姿勢ボーン)アプリケーション / Bone sender
 - [バーチャルモーションキャプチャー - VirtualMotionCapture](https://vmc.info/) - 汎用VR機器(OpenVR)を用いたモーションキャプチャー。3点から10点トラキングまで対応。視線トラッキングデバイスなどにも対応。
-- [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ。VMCと併用可能
+- [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ。VMCと併用可能【VRM0/VRM1両対応】
 - [360KinectGum](https://daifuklana.booth.pm/items/2109279) - Kinect v1を用いたフルボディモーションキャプチャ。
-- [ThreeDPoseTracker](https://digital-standard.booth.pm/items/3698596) - USBカメラと機械学習を用いたフルボディモーションキャプチャー(Windows)
-- [TDPT](https://digital-standard.com/tdptios/) - iPhone単体で機械学習を用いたフルボディモーションキャプチャーを実現(iOS)
+- [ThreeDPoseTracker](https://digital-standard.booth.pm/items/3698596) - USBカメラと機械学習を用いたフルボディモーションキャプチャー(Windows)【VRM0/VRM1両対応】
+- [TDPT](https://digital-standard.com/tdptios/) - iPhone単体で機械学習を用いたフルボディモーションキャプチャーを実現(iOS)【VRM0/VRM1両対応】
 - [VSeeFace](https://www.vseeface.icu/) - VSeeFace is a free, highly configurable face and hand tracking VRM avatar puppeteering program.
 - [MocapForAll](https://vrlab.akiya-souken.co.jp/product) - PCと複数のウェブカメラによるフルボディモーションキャプチャ
 - [Keyboard Stuvio](https://natsunatsu.booth.pm/items/2956377) - WebカメラとMIDIキーボードによる演奏からモーションキャプチャ
@@ -42,9 +42,12 @@ We have identified examples of data being sent that only works with some softwar
 - [XR Animator](https://xr-animator.booth.pm/items/4513654) - AIベース (MediaPipe) の全身モーション キャプチャ
 - [LuppetX](https://luppet.jp/) - WebカメラとLeapMotionだけで使える3DバーチャルYoutuber向けトラッキングシステム
 - [iFacialMocap Powered by NVIDIA Broadcast](https://apps.microsoft.com/store/detail/ifacialmocap-powered-by-nvidia-broadcast/9N01FGS2ZK3X) - NVIDIA RTXシリーズGPUとNVIDIA ARSDKを用いて、Webカメラによる高度なフェイストラッキングを実現します
+- [VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936) - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。【VRM0/VRM1両対応】
+- [MCP2VMCP](https://github.com/gpsnmeajp/MCP2VMCP) - mocopiのモーションをVMCProtocolで送信します。【VRM0/VRM1両対応】
+- [Dollars MoCap](https://docs.dollarsmocap.com/Dollars-MONO/engines/) - カメラベースのモーションキャプチャーソリューション
 
 # Assistant(拡張情報送信, 表情・視線・一部ボーンなどのみ)アプリケーション / Faicial or other sender
-- [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)
+- [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)【VRM0/VRM1両対応】
 - [QuestOSCTransformSender](https://github.com/sh-akira/QuestOSCTransformSender) - Oculus Quest OSC transform sender for VirtualMotionCapture (トラッカー姿勢情報)
 - [Simple Motion Tracker](https://yuki-natsuno-vt.github.io/SimpleMotionTraker/) - Webカメラを使用した顏認識によるヘッドトラッキングやアイトラッキング(トラッカー姿勢情報・視線情報)
 - [VMCOculus](https://github.com/denpadokei/VMCOculus) - Oculus版Beat SaberでVMCの頭が動かなくなる問題を解決するMOD(トラッカー姿勢情報)
@@ -56,18 +59,21 @@ We have identified examples of data being sent that only works with some softwar
 - [SVIFT - Suvi's VTuber Integration For Twitch](http://suvidriel.com/) - Allows integration of Twitch to VRChat and VSeeFace through OSC and VMC-protocols
 - [Uni-motion / Uni-studio](https://unimotioninfo.wixsite.com/guide/upperbodymode) - IMUトラッカーの情報を仮想トラッカー情報として送信
 - [VRCFTtoVMCP](https://github.com/tkns3/VRCFTtoVMCP) - VRCFaceTracking からフェイストラッキングデータを受け取り、そのデータを PerfectSync の Blendshape に変換して VMCProtocol で送信する Windows アプリ
+- [ContactGlove](https://docs.diver-x.jp/mocopi/howtouse.html) - 手袋型コントローラから、手首の姿勢情報や指情報、コントローラ情報を送信可能
 
 # Coordinator(中間加工)アプリケーション / Relay Mix apps
 - ~~[VMCProtocolMultiplexer](https://github.com/gpsnmeajp/VMCProtocolMultiplexer) - VMCProtocolを分配するソフトウェア。複数の入出力を持ち、配送先を自由に設定することができる。~~ (非推奨。VMCProtocolReflectorを使ってください)
 - **[VMCProtocolReflector](https://github.com/gpsnmeajp/VMCProtocolReflector)** - VMCProtocolを再配信するソフトウェア。1入力多出力で、1つのモーションや表情データを、複数のVMCProtocol対応ソフトウェアに送信することができます。
 - [Remote Marionette](https://www.machanbazaar.com/remotemarionette/) - WebRTC(SkyWay)を用いてVMCProtocolを遠隔地に中継するソフトウェア。
-- **[VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936)** - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。
+- **[VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936)** - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。【VRM0/VRM1両対応】
+- [MultiTrackOSCSender](https://booth.pm/zh-tw/items/5167553) - IMU方式のモーションキャプチャーで発生しがちな位置ズレを自動リセットするツール
+- [VRMPlaybackClient](https://github.com/kevinjycui/VRMPlaybackClient) - 音声付きあるいはなしでの、VMCProtocolモーションを記録・再生するソフトウェア
 
 # Marionette(モーション受信)アプリケーション / Receiver apps
 ### ライブラリ/アドオン / Library and addon
-- **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity向けモーション受信アセット(UniVRMと併用して使用する)
+- **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity向けモーション受信アセット(UniVRMと併用して使用する)【VRM0/VRM1両対応】
 - **[VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)** - Unreal Engine向けモーション受信プラグイン(VRM4Uと併用して使用する)
-- **[VRM4U](https://ruyo.github.io/VRM4U/)** - Unreal Engine 4で動作するVRMファイルのインポーター(単体で対応、必要に合わせてVMC4UEと使い分け) [接続手順](https://ruyo.github.io/VRM4U/08_vmc/)
+- **[VRM4U](https://ruyo.github.io/VRM4U/)** - Unreal Engine 4で動作するVRMファイルのインポーター(単体で対応、必要に合わせてVMC4UEと使い分け) [接続手順](https://ruyo.github.io/VRM4U/08_vmc/)【VRM0/VRM1両対応】
 - **[VMC4B Blender addon for VMCProtocol](https://tonimono.booth.pm/items/3432915)** - Blender向けモーション受信アドオン
 - [hVMCP](https://github.com/Cj-bc/hVMCP) - Haskell版VMCProtocol実装(GPL)
 
@@ -87,14 +93,20 @@ We have identified examples of data being sent that only works with some softwar
 - [VNyan](https://suvidriel.itch.io/vnyan) - VNyan is a 3D VTuber Front end application for bringing your VTubing to the next level. ノードベースでプログラミング可能なVtuber向け統合演出環境
 - [DAN SING](https://store.steampowered.com/app/1688750/AMV_Maker_for_Vroid_VRM_and_MMD_Mac_Supported/) - Music video tool using avatars, アバターを使ったミュージックビデオ撮影ツール
 - [Animaze by FaceRig](https://www.animaze.us/manual/vmc-guide) -  Livestream, video chat, and record videos as incredible 2D and 3D avatars. (VMC Protocol only supports 3D avatars). 元祖バーチャルキャラクター撮影ツール(VMCProtocolは3Dのみ対応)
-- [VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936) - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。
+- [VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936) - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。【VRM0/VRM1両対応】
 - [VMagicMirror](https://baku-dreameater.booth.pm/items/1272298) - VRMをキーボードとマウスだけで動かせるWindows向けソフト
+- [ケヤキスタジオ](https://keyaki-kaihatsu.booth.pm/items/5381402) - アバター映像制作アプリ。モーションキャプチャから編集、シーンの作り込み、AR撮影など。Windows, iOS, Android対応
+- [Talking Head Anime 3 with Switchable Images](https://gitlab.com/pale_color/talking-head-anime-3-with-switchable-images) - 1枚絵を生成AIを使って動かせるようにするツール
+- [AvaKit](https://note.com/avakit/n/n3eefc991f86a?magazine_key=m4853412f8bad) - カメラベースのモーションキャプチャー・配信ソフトだが、VMCProtocolも入力として利用可能
+- [Warudo](https://store.steampowered.com/app/2079120/Warudo/?l=japanese) - 3D VTubingソフトウェア。フルボディトラッキングソースとしてVMCProtocolを利用可能
+- [OBSKUR](https://www.obskur.com/) - ストリーマー向け統合配信環境ソフトウェア。3D VTuber機能のトラッキングソースとしてVMCProtocolを利用可能
 
 ### 映像支援ツール / Live stream helper apps
 - [VMC-Websocket-OBS](https://github.com/gpsnmeajp/VMC-Websocket-OBS) - VMCProtocolを用いてバーチャルモーションキャプチャーの状態を取得し、Websocketを用いてOBSを制御するソフトウェア
 - [ゆかりねっとコネクター](https://www.machanbazaar.com/%e3%82%86%e3%81%8b%e3%82%8a%e3%81%ad%e3%81%a3%e3%81%a8%e3%82%b3%e3%83%8d%e3%82%af%e3%82%bf%e3%83%bc/) - 話した言葉を字幕にして、多言語翻訳まで出来る配信支援アプリです。(キャリブレーション開始コマンドの発行に対応。YNC独自拡張仕様により字幕表示もサポート)
 - [VMCbroadcaster_v0.1](https://izm.fanbox.cc/posts/1301580?utm_campaign=manage_post_page&utm_medium=share&utm_source=twitter) - バモキャの映像を見ながらカメラマンが頑張るソフト
 - [vmc2bvh](https://github.com/infosia/vmc2bvh) - バーチャルモーションキャプチャーからBVH (Biovision Hierarchy)モーションファイルを生成するツール
+- [AmariMocapTools](https://amarinoa.booth.pm/items/5118343) - VMCProtocolモーションデータからBVHモーションファイルを収録するツール
 
 ### ゲーム / Games
 - [パイロットクロス(PilotXross)](https://n-mattun.booth.pm/items/1997616) - VR機器向けに開発したVRフライトゲームです
@@ -110,6 +122,8 @@ We have identified examples of data being sent that only works with some softwar
 - [VMCPViewerVR](https://github.com/gpsnmeajp/VMCPViewerVR) - VMCProtocol経由で送られてきた姿勢を反映し、VRゴーグルで鑑賞するためのソフト
 - [Roid1 URDF を VMCプロトコル で動かすもの](https://github.com/kirurobo/Roid1_VMCProtocol) - サーボロボットをモーションデータで制御
 - [DesktopFullTrackingVMCP](https://kirisamenanoha.booth.pm/items/5030353) - デスクトップフルトラアプリ
+- [SlimeVR](https://github.com/SlimeVR/SlimeVR-Server) - オープンソースのボディトラッカー
+- [TMARelay](https://booth.pm/ja/items/5056237) - VMCProtocolｍｐ市政情報をVRChat OSCに変換して送信するソフトウェア
 
 # 依存ライブラリ / Dependency
 - [UniVRM 0.53(Unity環境 必須)](https://github.com/vrm-c/UniVRM)
@@ -134,6 +148,9 @@ We have identified examples of data being sent that only works with some softwar
 - [WebカメラだけでmediapipeとVSeeFace(without Leap Motion)でVRMモデルを動かす実験メモ](https://angelpinpoint.seesaa.net/article/483827280.html)
 - [パーフェクトシンクであそぼう！](https://hinzka.hatenablog.com/entry/2020/08/15/145040)
 - [バーチャルモーションキャプチャーへのプルリクまとめと、内部構造メモ](https://note.com/gpsnmeajp/n/n7d741691a126)
+- [Tauriでばもきゃと連携する話： Webでもトラッカーの情報を扱いたい!](https://qiita.com/kouta_vr/items/46f897481bd00ffe1665)
+- [VRM10のLookAtの仕様によってVMCProtocolの送信時に困った話](https://qiita.com/daifuk-lana/items/a9cc4af7b4143ca994af)
+- [waidayoを使って手軽にUnityやUE4でフェイシャルキャプチャ(表情取得)しよう](https://qiita.com/gpsnmeajp/items/5bb00157a39436039fed)
 - [その他Qiitaの記事](https://qiita.com/tags/vmcprotocol)
 - [その他Noteの記事](https://note.com/search?q=VMCProtocol)
 
