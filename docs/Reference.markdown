@@ -100,7 +100,7 @@ We have identified examples of data being sent that only works with some softwar
 - [AvaKit](https://note.com/avakit/n/n3eefc991f86a?magazine_key=m4853412f8bad) - カメラベースのモーションキャプチャー・配信ソフトだが、VMCProtocolも入力として利用可能
 - [Warudo](https://store.steampowered.com/app/2079120/Warudo/?l=japanese) - 3D VTubingソフトウェア。フルボディトラッキングソースとしてVMCProtocolを利用可能
 - [OBSKUR](https://www.obskur.com/) - ストリーマー向け統合配信環境ソフトウェア。3D VTuber機能のトラッキングソースとしてVMCProtocolを利用可能
-- [VCamStream](https://booth.pm/ja/items/5063567) - 手元カメラ配信など3Dアバターと実写映像を構成する配信向けソフト
+- [VCamStream](https://booth.pm/ja/items/5063567) - 手元カメラ配信など3Dアバターと実写映像を構成する配信向けソフト【VRM0/VRM1両対応】
 
 ### 映像支援ツール / Live stream helper apps
 - [VMC-Websocket-OBS](https://github.com/gpsnmeajp/VMC-Websocket-OBS) - VMCProtocolを用いてバーチャルモーションキャプチャーの状態を取得し、Websocketを用いてOBSを制御するソフトウェア
