@@ -10,10 +10,10 @@ hero_darken: true
 ---
 
 プロトコル実装のサンプルは以下にあります。  
-Unity 2021.3.8.f1で動作を確認しています。
+Unity 2022.3.2.f1で動作を確認しています。
 
 A sample protocol implementation can be found below.  
-Confirmed to work with Unity 2021.3.8.f1.
+Confirmed to work with Unity 2022.3.2.f1.
 
 **[Sample (github)](https://github.com/sh-akira/VirtualMotionCaptureProtocol/tree/master/sample)**
 
@@ -22,8 +22,8 @@ Confirmed to work with Unity 2021.3.8.f1.
 The license for this sample script is listed at the top of the source code.
 
 # 依存ライブラリ / Dependent library
-- VRM0:[UniVRM 0.99](https://github.com/vrm-c/UniVRM)
-- VRM1:[VRM1](https://github.com/vrm-c/UniVRM)
+- VRM0:[UniVRM-0.120.0_be13](https://github.com/vrm-c/UniVRM)
+- VRM1:[VRM1 0.120.0_be13](https://github.com/vrm-c/UniVRM)
 - [uOSC](https://github.com/hecomi/uOSC)
 
 # 手持ちのVRMがバージョン0か1かわからない場合 / If you don't know if your VRM is version 0 or 1
