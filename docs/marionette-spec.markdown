@@ -85,12 +85,23 @@ v2.1より、MR合成用のスケールが追加された。
 ```
 /VMC/Ext/Bone/Pos (string){name} (float){p.x} (float){p.y} (float){p.z} (float){q.x} (float){q.y} (float){q.z} (float){q.w}  
 ```
-モデルのrootとなるオブジェクトのLocal姿勢  
+モデルのBoneのLocal姿勢  
 nameはUnityEngineのHumanBodyBonesに沿った型名  
 前半がPosition、後半がQuaternion  
   
 ※HumanBodyBonesすべてが送信される。LastBoneも含む。  
 これにより指の動きやEyeボーンなども送信される。  
+
+**VRM1に関する注意事項**  
+VRM1では、ControlRigによる正規化Bone姿勢と、オリジナルBone姿勢があります。  
+[ControlRigの有効状態によって、同じanimator.GetBoneTransformを使っていても取得できる姿勢情報が異なります。](https://vrm.dev/api/vrm1_controlrig/#%E8%A9%B3%E7%B4%B0)
+
+VMCProtocolとしての推奨は、ControlRigが適用されていない非正規化(オリジナル)ボーン情報です。  
+(instance.Humanoid.GetBoneTransformで得られる姿勢です)  
+
+正規化ボーン(instance.Runtime.ControlRig.GetBoneTransform)を送信することは禁止していませんが非推奨です。  
+対応する場合は既定で無効のオプション設定として取り扱ってください。
+
 
 ### VRM BlendShapeProxyValue
 ```

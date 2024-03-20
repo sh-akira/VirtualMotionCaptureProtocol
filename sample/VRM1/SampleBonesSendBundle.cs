@@ -3,6 +3,8 @@
  * gpsnmeajp
  * https://sh-akira.github.io/VirtualMotionCaptureProtocol/
  *
+ * Use VRM-0.120.0_be13.unitypackage
+ *
  * These codes are licensed under CC0.
  * http://creativecommons.org/publicdomain/zero/1.0/deed.ja
  */
@@ -30,6 +32,8 @@ public class SampleBonesSendBundle : MonoBehaviour
 
     Animator animator = null;
     Vrm10Instance vrmRoot = null;
+
+    string path = "C:\\default.vrm";
 
     SynchronizationContext synchronizationContext;
 
@@ -74,7 +78,7 @@ public class SampleBonesSendBundle : MonoBehaviour
             {
                 if (bone != HumanBodyBones.LastBone)
                 {
-                    var Transform = animator.GetBoneTransform(bone);
+                    var Transform = vrmRoot.Humanoid.GetBoneTransform(bone);
                     if (Transform != null)
                     {
                         boneBundle.Add(new Message("/VMC/Ext/Bone/Pos",
@@ -158,7 +162,7 @@ public class SampleBonesSendBundle : MonoBehaviour
             var LabelStyle = new GUIStyle(GUI.skin.label);
             LabelStyle.fontSize = 24;
 
-            var path = GUILayout.TextField("C:\\default.vrm", TextFieldStyle);
+            path = GUILayout.TextField(path, TextFieldStyle);
             if (GUILayout.Button("Load VRM", ButtonStyle)) {
                 LoadVRM(path);
             }
@@ -168,7 +172,7 @@ public class SampleBonesSendBundle : MonoBehaviour
 
     void SendBoneTransformForTracker(ref Bundle bundle, HumanBodyBones bone, string DeviceSerial)
     {
-        var DeviceTransform = animator.GetBoneTransform(bone);
+        var DeviceTransform = vrmRoot.Humanoid.GetBoneTransform(bone);
         if (DeviceTransform != null) {
             bundle.Add(new Message("/VMC/Ext/Tra/Pos",
         (string)DeviceSerial,
@@ -207,37 +211,18 @@ public class SampleBonesSendBundle : MonoBehaviour
     //You can receive VRM over the network or file or other.
     public void LoadVRMFromData(byte[] VRMdataRaw)
     {
-        GlbLowLevelParser glbLowLevelParser = new GlbLowLevelParser(null, VRMdataRaw);
-        GltfData gltfData = glbLowLevelParser.Parse();
-        Vrm10Data vrm = Vrm10Data.Parse(gltfData);
-        GltfData migratedGltfData = null;
-
-        if (vrm == null) {
-            //Auto migration
-            MigrationData mdata;
-            migratedGltfData = Vrm10Data.Migrate(gltfData, out vrm, out mdata);
-            if (vrm == null) {
-                Debug.LogError(mdata.Message);
-                return;
-            }
-        }
-
-        Vrm10Importer vrmImporter = new Vrm10Importer(vrm);
-
         synchronizationContext.Post(async (_) => {
-            RuntimeGltfInstance gltfInstance = await vrmImporter.LoadAsync(new VRMShaders.ImmediateCaller());
-            gltfData.Dispose();
-            vrmImporter.Dispose();
+            var instance = await Vrm10.LoadBytesAsync(VRMdataRaw, canLoadVrm0X: false, showMeshes: true, controlRigGenerationOption: ControlRigGenerationOption.None);
+            await Task.Delay(100); //VRM1不具合対策
 
-            if (migratedGltfData != null) {
-                migratedGltfData.Dispose();
-            }
-
-            Model = gltfInstance.Root;
+            Model = instance.gameObject;
             Model.transform.parent = this.transform;
 
-            gltfInstance.EnableUpdateWhenOffscreen();
-            gltfInstance.ShowMeshes();
+            var meshes = Model.GetComponentsInChildren<SkinnedMeshRenderer>();
+            foreach (var m in meshes)
+            {
+                m.updateWhenOffscreen = true;
+            }
         }, null);
     }
 

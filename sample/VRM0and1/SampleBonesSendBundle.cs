@@ -3,6 +3,8 @@
  * gpsnmeajp
  * https://sh-akira.github.io/VirtualMotionCaptureProtocol/
  *
+ * Use UniVRM-0.120.0_be13.unitypackage, VRM-0.120.0_be13.unitypackage
+ *
  * These codes are licensed under CC0.
  * http://creativecommons.org/publicdomain/zero/1.0/deed.ja
  */
@@ -35,6 +37,7 @@ public class SampleBonesSendBundle : MonoBehaviour
 
     SynchronizationContext synchronizationContext;
 
+    string path = "C:\\default.vrm";
     public enum VirtualDevice
     {
         HMD = 0,
@@ -79,7 +82,16 @@ public class SampleBonesSendBundle : MonoBehaviour
             {
                 if (bone != HumanBodyBones.LastBone)
                 {
-                    var Transform = animator.GetBoneTransform(bone);
+                    Transform Transform;
+                    if (vrm10Root)
+                    {
+                        Transform = vrm10Root.Humanoid.GetBoneTransform(bone);//生のBone
+                    }
+                    else
+                    {
+                        Transform = animator.GetBoneTransform(bone);//正規化されたBone
+                    }
+
                     if (Transform != null)
                     {
                         boneBundle.Add(new Message("/VMC/Ext/Bone/Pos",
@@ -171,7 +183,8 @@ public class SampleBonesSendBundle : MonoBehaviour
 
     private void OnGUI()
     {
-        if (RuntimeLoadGUI) {
+        if (RuntimeLoadGUI)
+        {
             var ButtonStyle = new GUIStyle(GUI.skin.button);
             ButtonStyle.fontSize = 24;
             var TextFieldStyle = new GUIStyle(GUI.skin.textField);
@@ -179,11 +192,12 @@ public class SampleBonesSendBundle : MonoBehaviour
             var LabelStyle = new GUIStyle(GUI.skin.label);
             LabelStyle.fontSize = 24;
 
-            var path = GUILayout.TextField("C:\\default.vrm", TextFieldStyle);
-            if (GUILayout.Button("Load VRM", ButtonStyle)) {
+            path = GUILayout.TextField(path, TextFieldStyle);
+            if (GUILayout.Button("Load VRM", ButtonStyle))
+            {
                 LoadVRM(path);
             }
-            GUILayout.Label("Port:"+uClient.port, LabelStyle);
+            GUILayout.Label("Port:" + uClient.port, LabelStyle);
 
             if (GUILayout.Button("Happy(Joy) ON", ButtonStyle))
             {
@@ -200,8 +214,18 @@ public class SampleBonesSendBundle : MonoBehaviour
 
     void SendBoneTransformForTracker(ref Bundle bundle, HumanBodyBones bone, string DeviceSerial)
     {
-        var DeviceTransform = animator.GetBoneTransform(bone);
-        if (DeviceTransform != null) {
+        Transform DeviceTransform;
+        if (vrm10Root)
+        {
+            DeviceTransform = vrm10Root.Humanoid.GetBoneTransform(bone);//生のBone
+        }
+        else
+        {
+            DeviceTransform = animator.GetBoneTransform(bone);//正規化されたBone
+        }
+
+        if (DeviceTransform != null)
+        {
             bundle.Add(new Message("/VMC/Ext/Tra/Pos",
         (string)DeviceSerial,
         (float)DeviceTransform.position.x,
@@ -261,28 +285,27 @@ public class SampleBonesSendBundle : MonoBehaviour
 
             return; //VRM0 Loaded
         }
-        catch (NotVrm0Exception) { 
+        catch (NotVrm0Exception)
+        {
             //continue loading
         }
 
-        Vrm10Data vrm10 = Vrm10Data.Parse(gltfData);
-        GltfData migratedGltfData = null;
-        Vrm10Importer vrm10Importer = new Vrm10Importer(vrm10);
+        synchronizationContext.Post(async (_) =>
+        {
+            var instance = await Vrm10.LoadBytesAsync(VRMdataRaw, canLoadVrm0X: false, showMeshes: true, controlRigGenerationOption: ControlRigGenerationOption.None);
+            await Task.Delay(100); //VRM1不具合対策
+            Model = instance.gameObject;
+            Model.transform.parent = this.transform;
+            animator = Model.GetComponent<Animator>();
 
-        synchronizationContext.Post(async (_) => {
-            RuntimeGltfInstance gltfInstance = await vrm10Importer.LoadAsync(new VRMShaders.ImmediateCaller());
-            gltfData.Dispose();
-            vrm10Importer.Dispose();
-
-            if (migratedGltfData != null) {
-                migratedGltfData.Dispose();
+            var meshes = Model.GetComponentsInChildren<SkinnedMeshRenderer>();
+            foreach (var m in meshes)
+            {
+                m.updateWhenOffscreen = true;
             }
 
-            Model = gltfInstance.Root;
-            Model.transform.parent = this.transform;
-
-            gltfInstance.EnableUpdateWhenOffscreen();
-            gltfInstance.ShowMeshes();
+            //開放
+            gltfData?.Dispose();
         }, null);
     }
 }

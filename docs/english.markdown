@@ -188,6 +188,17 @@ q=Quaternion
   
 All HumanBodyBones will be send. (Include eye bone and finger bones)
 
+
+**Notice regarding VRM1**  
+In VRM1, there are normalized bone poses controlled by ControlRig and original bone poses.  
+[Depending on the state of ControlRig, the pose information obtained using the same animator.GetBoneTransform may differ.](https://vrm.dev/api/vrm1_controlrig/#%E8%A9%B3%E7%B4%B0)  
+
+The recommended approach as VMCProtocol is to use **non-normalized (original)** bone information without ControlRig applied.  
+(This is the pose obtained with instance.Humanoid.GetBoneTransform)  
+
+While it is not prohibited to send normalized bones (instance.Runtime.ControlRig.GetBoneTransform), it is not recommended.  
+If you choose to do so, handle it as an option setting that is disabled by default.
+
 ### VRM BlendShapeProxyValue
 ```
 /VMC/Ext/Blend/Val (string){name} (float){value}  
