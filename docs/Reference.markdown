@@ -45,6 +45,8 @@ We have identified examples of data being sent that only works with some softwar
 - [VMCProtocol Mixer / VMCProtocolミキサー](https://daifuklana.booth.pm/items/4857936) - VMCProtocolで送信された表情やボーンその他の情報を任意に合成し、表示する。有料版では4K画像撮影機能や送信機能あり。【VRM0/VRM1両対応】
 - [MCP2VMCP](https://github.com/gpsnmeajp/MCP2VMCP) - mocopiのモーションをVMCProtocolで送信します。【VRM0/VRM1両対応】
 - [Dollars MoCap](https://docs.dollarsmocap.com/Dollars-MONO/engines/) - カメラベースのモーションキャプチャーソリューション
+- [Rebocap](https://doc.rebocap.com/ja_JP/third_party_software_access/VMC/) - 慣性センサーベースのモーションキャプチャーシステム
+
 
 # Assistant(拡張情報送信, 表情・視線・一部ボーンなどのみ)アプリケーション / Faicial or other sender
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)【VRM0/VRM1両対応】
@@ -60,6 +62,7 @@ We have identified examples of data being sent that only works with some softwar
 - [Uni-motion / Uni-studio](https://unimotioninfo.wixsite.com/guide/upperbodymode) - IMUトラッカーの情報を仮想トラッカー情報として送信
 - [VRCFTtoVMCP](https://github.com/tkns3/VRCFTtoVMCP) - VRCFaceTracking からフェイストラッキングデータを受け取り、そのデータを PerfectSync の Blendshape に変換して VMCProtocol で送信する Windows アプリ
 - [ContactGlove](https://docs.diver-x.jp/mocopi/howtouse.html) - 手袋型コントローラから、手首の姿勢情報や指情報、コントローラ情報を送信可能
+- [StretchSense Studio Glove](https://stretchsense.my.site.com/defaulthelpcenter26Sep/s/article/VMC-Virtual-Motion-Capture-Streaming-from-Hand-Engine2?language=en_US) - 手袋型キャプチャデバイスから、手首の姿勢情報や指情報を送信可能
 
 # Coordinator(中間加工)アプリケーション / Relay Mix apps
 - ~~[VMCProtocolMultiplexer](https://github.com/gpsnmeajp/VMCProtocolMultiplexer) - VMCProtocolを分配するソフトウェア。複数の入出力を持ち、配送先を自由に設定することができる。~~ (非推奨。VMCProtocolReflectorを使ってください)
@@ -101,6 +104,7 @@ We have identified examples of data being sent that only works with some softwar
 - [Warudo](https://store.steampowered.com/app/2079120/Warudo/?l=japanese) - 3D VTubingソフトウェア。フルボディトラッキングソースとしてVMCProtocolを利用可能
 - [OBSKUR](https://www.obskur.com/) - ストリーマー向け統合配信環境ソフトウェア。3D VTuber機能のトラッキングソースとしてVMCProtocolを利用可能
 - [VCamStream](https://booth.pm/ja/items/5063567) - 手元カメラ配信など3Dアバターと実写映像を構成する配信向けソフト【VRM0/VRM1両対応】
+- [VRMFrontView](https://booth.pm/ja/items/5960908) - バーチャルモーションキャプチャーなどで収録している映像に合わせて、別視点の映像を収録するための補助表示ツール。単独撮影も可能。
 
 ### 映像支援ツール / Live stream helper apps
 - [VMC-Websocket-OBS](https://github.com/gpsnmeajp/VMC-Websocket-OBS) - VMCProtocolを用いてバーチャルモーションキャプチャーの状態を取得し、Websocketを用いてOBSを制御するソフトウェア
@@ -108,6 +112,7 @@ We have identified examples of data being sent that only works with some softwar
 - [VMCbroadcaster_v0.1](https://izm.fanbox.cc/posts/1301580?utm_campaign=manage_post_page&utm_medium=share&utm_source=twitter) - バモキャの映像を見ながらカメラマンが頑張るソフト
 - [vmc2bvh](https://github.com/infosia/vmc2bvh) - バーチャルモーションキャプチャーからBVH (Biovision Hierarchy)モーションファイルを生成するツール
 - [AmariMocapTools](https://amarinoa.booth.pm/items/5118343) - VMCProtocolモーションデータからBVHモーションファイルを収録するツール
+
 
 ### ゲーム / Games
 - [パイロットクロス(PilotXross)](https://n-mattun.booth.pm/items/1997616) - VR機器向けに開発したVRフライトゲームです
@@ -125,6 +130,8 @@ We have identified examples of data being sent that only works with some softwar
 - [DesktopFullTrackingVMCP](https://kirisamenanoha.booth.pm/items/5030353) - デスクトップフルトラアプリ
 - [SlimeVR](https://github.com/SlimeVR/SlimeVR-Server) - オープンソースのボディトラッカー
 - [TMARelay](https://booth.pm/ja/items/5056237) - VMCProtocolの姿勢情報をVRChat OSCに変換して送信するソフトウェア
+- [VBTTools](https://github.com/tbbsakura/VBTTools) - VRMモデルの姿勢をVirtual Motion Tracker(VMT)やOpenVR-OpenTrackに送信して、SteamVRに仮想HMD/コントローラとして認識させるツール
+
 
 # 依存ライブラリ / Dependency
 - [UniVRM 0.53(Unity環境 必須)](https://github.com/vrm-c/UniVRM)
