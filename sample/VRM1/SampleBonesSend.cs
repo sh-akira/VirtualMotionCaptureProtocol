@@ -48,7 +48,7 @@ public class SampleBonesSend : MonoBehaviour
         uClient = GetComponent<uOSC.uOscClient>();
     }
 
-    void Update()
+    void LateUpdate()
     {
         //Only model updated
         if (Model != null && OldModel != Model)

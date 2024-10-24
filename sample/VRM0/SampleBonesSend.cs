@@ -45,7 +45,7 @@ public class SampleBonesSend : MonoBehaviour
         uClient = GetComponent<uOSC.uOscClient>();
     }
 
-    void Update()
+    void LateUpdate()
     {
         //モデルが更新されたときのみ読み込み
         if (Model != null && OldModel != Model)

@@ -38,7 +38,7 @@ public class SampleBonesReceive : MonoBehaviour
         server.onDataReceived.AddListener(OnDataReceived);
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (blendShapeProxy == null)
         {

@@ -43,7 +43,7 @@ public class SampleBonesReceive : MonoBehaviour
         Application.targetFrameRate = 60; //60fps
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (vrm10Root == null)
         {

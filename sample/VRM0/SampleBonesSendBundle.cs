@@ -45,7 +45,7 @@ public class SampleBonesSendBundle : MonoBehaviour
         synchronizationContext = SynchronizationContext.Current;
     }
 
-    void Update()
+    void LateUpdate()
     {
         //Only model updated
         if (Model != null && OldModel != Model)

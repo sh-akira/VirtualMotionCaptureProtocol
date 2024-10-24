@@ -21,6 +21,15 @@ We have identified examples of data being sent that only works with some softwar
 
 # 採用事例 / Usecases
 
+## お知らせ / Notice
+VMCProtocolは、VRM0/1両方に対応していますが、送信側・受信側アプリケーションの両方で同じバージョンを使用する必要があり、混在させることは出来ません。  
+多くのアプリケーションは未だVRM0のみの対応となっています。  
+VRM1のアバターをお持ちの方は、[VRMRemaker](https://fujisunflower.fanbox.cc/posts/7313957)や[VrmDowngrader](https://github.com/saturday06/VrmDowngrader)などを利用しVRM0を利用可能にしておくことを推奨致します。
+
+The VMCProtocol supports both VRM0 and VRM1, but the same version must be used by both the sending and receiving applications, and mixing versions is not possible.
+Many applications currently only support VRM0.
+If you have a VRM1 avatar, it is recommended to use tools like [VRMRemaker](https://fujisunflower.fanbox.cc/posts/7313957) or [VrmDowngrader](https://github.com/saturday06/VrmDowngrader) to make it compatible with VRM0.
+
 # Performer(モーション送信, 姿勢ボーン)アプリケーション / Bone sender
 - [バーチャルモーションキャプチャー - VirtualMotionCapture](https://vmc.info/) - 汎用VR機器(OpenVR)を用いたモーションキャプチャー。3点から10点トラキングまで対応。視線トラッキングデバイスなどにも対応。
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ。VMCと併用可能【VRM0/VRM1両対応】

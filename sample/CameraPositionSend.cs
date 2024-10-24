@@ -20,7 +20,7 @@ public class CameraPositionSend : MonoBehaviour
         uClient = GetComponent<uOSC.uOscClient>();
     }
 
-    void Update()
+    void LateUpdate()
     {
         uClient.Send("/VMC/Ext/Cam",
                     "camera",

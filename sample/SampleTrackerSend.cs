@@ -39,7 +39,7 @@ public class SampleTrackerSend : MonoBehaviour
     {
         client = GetComponent<uOSC.uOscClient>();
     }
-    void Update()
+    void LateUpdate()
     {
         if (client == null)
         {

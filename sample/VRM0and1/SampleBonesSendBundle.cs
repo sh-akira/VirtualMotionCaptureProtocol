@@ -53,7 +53,7 @@ public class SampleBonesSendBundle : MonoBehaviour
         Application.targetFrameRate = 60; //60fps
     }
 
-    void Update()
+    void LateUpdate()
     {
         //Only model updated
         if (Model != null && OldModel != Model)
