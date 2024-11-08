@@ -55,7 +55,7 @@ If you have a VRM1 avatar, it is recommended to use tools like [VRMRemaker](http
 - [MCP2VMCP](https://github.com/gpsnmeajp/MCP2VMCP) - mocopiのモーションをVMCProtocolで送信します。【VRM0/VRM1両対応】
 - [Dollars MoCap](https://docs.dollarsmocap.com/Dollars-MONO/engines/) - カメラベースのモーションキャプチャーソリューション
 - [Rebocap](https://doc.rebocap.com/ja_JP/third_party_software_access/VMC/) - 慣性センサーベースのモーションキャプチャーシステム
-
+- [DiMocap](https://www.dimocap.com/en/) - カメラベースのモーションキャプチャー
 
 # Assistant(拡張情報送信, 表情・視線・一部ボーンなどのみ)アプリケーション / Faicial or other sender
 - [waidayo/face2vmc](https://booth.pm/ja/items/1779185) - iPhoneを用いたフェイシャルキャプチャ(表情・視線情報)【VRM0/VRM1両対応】
