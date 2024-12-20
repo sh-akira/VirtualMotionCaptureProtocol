@@ -87,7 +87,7 @@ If you have a VRM1 avatar, it is recommended to use tools like [VRMRemaker](http
 - **[VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)** - Unreal Engine向けモーション受信プラグイン(VRM4Uと併用して使用する)
 - **[VRM4U](https://ruyo.github.io/VRM4U/)** - Unreal Engine 4で動作するVRMファイルのインポーター(単体で対応、必要に合わせてVMC4UEと使い分け) [接続手順](https://ruyo.github.io/VRM4U/08_vmc/)【VRM0/VRM1両対応】
 - **[VMC4B Blender addon for VMCProtocol](https://tonimono.booth.pm/items/3432915)** - Blender向けモーション受信アドオン
-- **[Godot XR VMC Tracker](https://github.com/Malcolmnixon/GodotXRVmcTracker)** - Godot Engine 4.3以降向けのモーション受信アドオン
+- **[Godot XR VMC Tracker](https://github.com/Malcolmnixon/GodotXRVmcTracker)** - Godot Engine 4.3以降向けのモーション受信アドオン。[Godot VRM Importer](https://godotengine.org/asset-library/asset/2031) と組み合わせることでVRM使用可能。[動画](https://www.youtube.com/watch?v=eE0UGosv7ek)
 - [hVMCP](https://github.com/Cj-bc/hVMCP) - Haskell版VMCProtocol実装(GPL)
 
 ### 映像配信・収録ツール / Live stream apps

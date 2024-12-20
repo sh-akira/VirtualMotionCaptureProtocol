@@ -22,8 +22,11 @@ It is a simple implementation using Open Sound Control and VRM, and can communic
 
 # Library/Asset
 - **[EVMC4U](https://github.com/gpsnmeajp/EasyVirtualMotionCaptureForUnity)** - Unity
-- **[VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)** - Unreal Engine
+- **[VMC4UE](https://github.com/HAL9HARUKU/VMC4UE)** - Unreal Engine with [VRM4U](https://ruyo.github.io/VRM4U/)
+- **[VRM4U](https://ruyo.github.io/VRM4U/)** - Unreal Engine
 - **[VMC4B Blender addon for VMCProtocol](https://tonimono.booth.pm/items/3432915)** - Blender
+- **[Godot XR VMC Tracker](https://github.com/Malcolmnixon/GodotXRVmcTracker)** - Godot Engine 4.3 with [Godot VRM Importer](https://godotengine.org/asset-library/asset/2031). [video](https://www.youtube.com/watch?v=eE0UGosv7ek)
+
 
 or you can implement protocol your self.
 
