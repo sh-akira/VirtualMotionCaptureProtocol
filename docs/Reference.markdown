@@ -169,7 +169,9 @@ If you have a VRM1 avatar, it is recommended to use tools like [VRMRemaker](http
 - [Tauriでばもきゃと連携する話： Webでもトラッカーの情報を扱いたい!](https://qiita.com/kouta_vr/items/46f897481bd00ffe1665)
 - [VRM10のLookAtの仕様によってVMCProtocolの送信時に困った話](https://qiita.com/daifuk-lana/items/a9cc4af7b4143ca994af)
 - [waidayoを使って手軽にUnityやUE4でフェイシャルキャプチャ(表情取得)しよう](https://qiita.com/gpsnmeajp/items/5bb00157a39436039fed)
-- [その他Qiitaの記事](https://qiita.com/tags/vmcprotocol)
+- [UnrealEngineでアバターを動かす方法](https://qiita.com/mintan/items/72d63cce4e6197b151b7)
+- [ReboCapとUnityでモーションキャプチャー＆モーション録画をしたい！](https://qiita.com/OmO_ti/items/cd276da4ff14270a0761)
+- [その他Qiitaの記事(VMCProtocol)](https://qiita.com/tags/vmcprotocol)
 - [その他Noteの記事](https://note.com/search?q=VMCProtocol)
 
 # メディア記事 / Media
